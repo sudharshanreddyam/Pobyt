@@ -1,0 +1,138 @@
+<!--
+   Generated template for the BookingPage page.
+   See http://ionicframework.com/docs/components/#navigation for more info on
+   Ionic pages and navigation.
+   -->
+<ion-header>
+    <ion-navbar hideBackButton padding>
+        <ion-title>Booking Details</ion-title>
+        <ion-buttons left>
+          <button ion-button icon-only (click)="this.navCtrl.pop()"><ion-icon name="ios-arrow-back"></ion-icon></button>
+        </ion-buttons>
+        
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bookingContent" no-bounce>
+    <div class="bookings-container" (swipe)="this.navCtrl.pop()">
+        <ion-grid class="hotel-name"[hidden]="!bookForOther">
+            <ion-row>
+                <ion-col col-12 class="booking-hotelinfo">{{hotelInfo.hotelName}}</ion-col>
+                <ion-col col-12 class="booking-address">{{hotelInfo.hotelLocation}}, {{hotelInfo.hotelCity}}, {{hotelInfo.hotelState}}</ion-col>
+            </ion-row>
+        </ion-grid><!--
+
+        <div class="b-username-container" [hidden]="!bookForOther">
+            <div class="b-username">
+               <table class="tg user-table">
+
+                </table>
+            </div>
+        </div> -->
+        <div class="b-user-details-container" [hidden]="!bookForOther">
+            <div class="b-user-details">
+                <ion-grid>
+                    <table class="tg detail-table">
+                      <tr>
+                        <td class="tg-lqy6">Booking For:</td>
+                        <td class="tg-9hbo"><span class="username">{{firstName+' '+lastName}}</span><span class="edituser" (click)="editUserDetails()"><img src="assets/booking/pencil.png" alt=""></span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-lqy6">Booking Hours:</td>
+                        <td class="tg-9hbo">{{hotelInfo.stayDetails.hours}}<span>HRS</span> : {{hotelInfo.stayDetails.mins}}<span>MINS</span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-lqy6">Amount Payable:</td>
+                        <td class="tg-9hbo">Rs.{{hotelInfo.stayDetails.youPay}}/-</td>
+                      </tr>
+                    </table>
+                    <div class="c-imp-container">
+                        <div class="impLabel">IMPORTANT</div>
+                    </div>
+                    <div class="c-requirements-container">
+                        <div class="c-max2-container">
+                            <div class="c-max2-img"><img src="assets/confirm/people.png" class="confirm-success"></div>
+                            <div class="c-max2-text">Max 2 people</div>
+                        </div>
+                        <div class="c-govtid-container">
+                            <div class="c-govtid-img"><img src="assets/confirm/id-card.png" class="confirm-success"></div>
+                            <div class="c-govtid-text">Valid Govt ID</div>
+                        </div>
+                    </div>
+                </ion-grid>
+            </div>
+            <div class="buffer-info">*You will have 1 hr time to check-in from the time of booking.</div>
+        </div>
+        <div class="bo-container" [hidden]="bookForOther">
+            <div class="bo-infoText">Kindly confirm your details listed below.</div>
+            <div class="bo-form-container">
+                <form [formGroup]="customerDetailsForm">
+                    <table class="tg">
+                      <tr>
+                        <td class="tg-lqy6">First Name:</td>
+                        <td class="tg-yw4l">
+                          <ion-input type="text" formControlName="firstName" [class.invalid]="!customerDetailsForm.controls.firstName.valid" class="inputField" id="firstName" [(ngModel)]="firstName" placeholder="First Name"></ion-input>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tg-lqy6">Last Name:</td>
+                        <td class="tg-yw4l">
+                          <ion-input type="text" formControlName="lastName" [class.invalid]="!customerDetailsForm.controls.lastName.valid "class="inputField" id="lastName" [(ngModel)]="lastName" placeholder="Last Name"></ion-input>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tg-lqy6">E-mail:</td>
+                        <td class="tg-yw4l">
+                          <ion-input type="email" formControlName="emailId" [class.invalid]="!customerDetailsForm.controls.emailId.valid "class="inputField" id="emailAddress" [(ngModel)]="emailAddress" (ngModelChange)="(emailAddress!=null)?emailAddress = emailAddress.toLowerCase():''" placeholder="Email"></ion-input>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tg-lqy6">Phone:</td>
+                        <td class="tg-yw4l">
+                          <ion-input type="tel" formControlName="contactNumber"  [class.invalid]="!customerDetailsForm.controls.contactNumber.valid "pattern="[0-9]*" minlength="10" maxlength="10" class="contactNumber" id="contactNumber" [(ngModel)]="contactNumber" placeholder="Mobile"></ion-input>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tg-lqy6">City in Govt. ID:</td>
+                        <td class="tg-yw4l">
+                          <ion-input type="text" formControlName="cityOfGovtId" class="inputField" id="cityOfGovtId" [(ngModel)]="cityOfGovtId" style="display: none !important;" placeholder="City"></ion-input>
+                          <ion-label class="city-select" (click)="getUserCityDetails()">{{lblTitle}}</ion-label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tg-lqy6">Date of Birth:</td>
+                        <td class="tg-yw4l">
+                          <ion-datetime formControlName="dateofBirth" displayFormat="MMM DD YYYY" id="dateOfBirth" [(ngModel)]="dateOfBirth" placeholder="Date Of Birth" (ionChange)="validateDOB()"></ion-datetime>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="submitDetails">
+                        <button [disabled]="(!customerDetailsForm.valid)" (click)="submitDetails()" class="submit-btn">Confirm Details</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="booking-bottom-container" [hidden]="!bookForOther" (swipe)="this.navCtrl.pop()">
+      <ul>
+        <li class="hotel-points">This Hotel requires you to provide a govt ID to check in.</li>
+        <li class="hotel-points">This Hotel does not accept a local ID.</li>
+      </ul>
+      <div class="check-container">
+          <ion-checkbox class="checkbox-square" [(ngModel)]="checked">
+          </ion-checkbox>
+          <div class="AcceptTerms">I accept that I may be required to submit a govt ID and the hotelier reserves right of admission and I abide by all the <span class="termLink" (click)="openTermsPage()">terms of serivce</span> and <span class="termLink" (click)="openTermsPage()">privacy policy</span>.</div>
+      </div>
+      <div class="PayButton-Container">
+          <ion-row>
+            <ion-col>
+              <button ion-button class='pobyt-button payAtHotel' [disabled]="!checked" (click)="generateOrder(true)">Pay at Hotel</button>              
+            </ion-col>
+            <ion-col>
+              <button ion-button class='pobyt-button PayNow' [disabled]="!checked" (click)="generateOrder(false)">Pay Now</button>              
+            </ion-col>
+          </ion-row>
+      </div>
+    </div>
+    <div *ngIf="keyboardOn" style="height:25%;"></div>
+</ion-content>

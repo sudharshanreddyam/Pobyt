@@ -1,0 +1,43 @@
+<!-- Generated template for the EmailComponent component -->
+<ion-content no-bounce no-padding no-margin>
+	<form [formGroup]="emailForm" ng-submit="onSubmit()" no-padding no-margin>
+        <ion-row no-padding no-margin>
+            <ion-col no-padding no-margin>
+                <img class='close-img' src="assets/signup/close.png" (click)="onClose()">
+            </ion-col>
+            <ion-col no-padding no-margin>
+                <img class='back-img' src="assets/signup/back.png" (click)="onBack()">
+            </ion-col>
+        </ion-row>
+        <ion-row class='info-row' no-padding no-margin>
+            <ion-label class='info-label'>
+                What's is your email?
+            </ion-label>
+        </ion-row>
+        <ion-row no-padding no-margin>
+            <ion-item class='names-item' no-padding no-margin>
+                <ion-label floating>EMAIL</ion-label>
+                <ion-input type="text" [class.invalid]="!emailForm.controls.emailId.valid && (emailForm.controls.emailId.dirty)" formControlName="emailId" name="emailId" [(ngModel)]="emailId">
+                </ion-input>
+            </ion-item>
+        </ion-row>
+        <ion-row no-padding no-margin>
+            <ion-item class='names-item' no-padding no-margin>
+                <ion-label floating>DATE OF BIRTH</ion-label>
+                <ion-datetime displayFormat="DD MMM YYYY" formControlName="dob" (ionChange)="validateAge()" name="dob" [(ngModel)]="dob"></ion-datetime>
+            </ion-item>
+            <ion-item no-lines *ngIf="!validAge">
+                <div class="error">
+                	Age must be more than 18 years
+                </div>
+            </ion-item>
+        </ion-row>
+        <ion-row no-padding no-margin>
+            <ion-col no-padding no-margin>
+                <button ion-button no-padding no-lines no-border class="go-btn" [disabled]="emailForm.invalid" (click)="onSubmit()">
+                    <img src='assets/signup/go.png' class="go-img">
+                </button>
+            </ion-col>
+        </ion-row>
+    </form>
+</ion-content>

@@ -1,0 +1,44 @@
+<!-- Generated template for the OtpComponent component -->
+<ion-content no-bounce no-padding no-margin>
+	<form [formGroup]="otpForm" ng-submit="onSubmit()" no-padding no-margin>
+		<ion-row no-padding no-margin>
+	        <ion-col no-padding no-margin>
+	            <img class='close-img' src="assets/signup/close.png" (click)="onClose()">
+	        </ion-col>
+	        <ion-col no-padding no-margin>
+	            <img class='back-img' src="assets/signup/back.png" (click)="onBack()">
+	        </ion-col>
+	    </ion-row>
+	    <ion-row no-padding no-margin>
+	        <ion-label class='info-label'>
+	            Verify your number
+	        </ion-label>
+	    </ion-row> 
+	    <ion-row class='mobile-row' no-padding no-margin>
+	        <ion-col col-3 class='country-label' no-padding no-margin>
+	            <ion-label>{{countryCode}}
+	            </ion-label>
+	        </ion-col>
+	        <ion-col class='mobile-label' no-padding no-margin>
+	            <ion-label>{{contactNumber}}
+	            </ion-label>
+	        </ion-col>
+	    </ion-row>
+	    <ion-row class='otp' no-padding no-margin>
+	        <ion-input type='tel' pattern="[0-9]*" minlength="6" maxlength="6" [class.invalid]="!otpForm.controls.otp.valid && (otpForm.controls.otp.dirty)" formControlName="otp" name="otp" [(ngModel)]="otp"></ion-input>
+	    </ion-row>
+	    <ion-row no-padding no-margin>
+	        <ion-label class='otp-label'>Enter the 6-digit code we`ve sent you.</ion-label>
+	    </ion-row>
+	    <ion-row no-padding no-margin>
+	    	<ion-col no-padding no-margin>
+	    		<ion-label class="resend-label" (click)="reSendOtp()">resend OTP</ion-label>
+	    	</ion-col>
+	    	<ion-col no-padding no-margin>
+	    		<button ion-button no-padding no-lines no-border class="go-btn" [disabled]="otpForm.invalid" (click)="onSubmit()">
+                    <img src='assets/signup/go.png' class="go-img">
+                </button>
+	    	</ion-col>
+	    </ion-row>
+	</form>
+</ion-content>

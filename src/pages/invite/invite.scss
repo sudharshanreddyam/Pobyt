@@ -1,0 +1,41 @@
+page-invite {
+    .scroll-content{
+      padding-top:8%;
+    }
+    .invite-header{
+        margin-top: 3.4vh;
+        margin-left:7.3vw;
+        font-size:2.2rem;
+        padding-right:7.0vw;
+        opacity: 0.7;
+    }
+    .invite-message{
+        margin-left:7.3vw;
+        padding-right:7.0vw;
+        span{
+            font-weight:600;
+            font-size: 1.25rem;
+        }
+    }
+
+    ion-header{
+        box-shadow:0px 3px 7px rgba(48,48,48,0.5);
+    }
+    .invite-buddies{
+        height:30vh;
+        width:100.0vw;
+    }
+    .invite-title{
+        margin-top: 7.2vh;
+        font-size: 1.05rem;
+        text-align: center;
+    }
+    .invite-code{
+        margin-top: 0.5vh;
+        background-color: rgb(218, 250, 248);
+        color:rgb(47, 187, 180);
+        font-size: 1.8rem;
+        letter-spacing:0.145rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,51 @@
+page-profile {
+	.scroll-content{
+	  padding-top:8%;
+	}
+
+	ion-header{
+		box-shadow:0px 3px 7px rgba(48,48,48,0.5);
+	}
+	.profile-card{
+		margin-top:4.94vh;
+		margin-left:5.73vw;
+		margin-right:5.73vw;
+    	box-shadow: 0rem 0rem 0.25rem 0.15rem rgba(172, 172, 172, 0.5);
+    	.item-inner{
+		    padding-right: 0vw !important;
+    	}
+    	.stacked-lbl{
+    		font-size:1.3rem;
+    		margin-top:1.94vh;
+    		margin-left:9.33vw;
+    		margin-bottom:0vh;
+    		margin-right:0vw;
+    	}
+    	.profile-lbl{
+		    font-size: 1.8rem;
+		    font-weight: 600;
+		    margin-left: 11.33vw;
+		    margin-bottom: 0vh;
+		    margin-top: 0.74vh;
+		    margin-right: 0vw;
+		    padding-bottom: 1.98vh;
+    	}
+    	.profile-arrow{
+    		margin-top:5.0vh;
+    	}
+    	.info-divider{
+    		border-bottom: 0.22vh solid rgba(200, 200, 200, 1)!important;	    
+    	}
+    	
+	}
+	.signout-btn{
+		margin:2vmax;
+		margin-left:34.6vw;
+		border-radius: 0.45rem;
+	    background-color: rgb(0,203,193);
+	    box-shadow: 0rem 0rem 0.35rem 0.1rem rgba(162,162,162, 0.5);
+	}
+	.signout-btn.activated{
+		background-color: rgb(0,203,193);
+	}
+}

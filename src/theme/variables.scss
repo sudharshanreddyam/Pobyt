@@ -1,0 +1,116 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+    primary:    #488aff,
+    secondary:  #32db64,
+    danger:     #f53d3d,
+    light:      #f4f4f4,
+    dark:       #222,
+    theme :     rgb(47 ,187 ,180),
+    text-grey: #99979a,
+    textcolor :#666,
+    link-color :#0066CC,
+    placeholder-color :#9A9A9A,
+    header-toolbar-background :#090C13,
+    content-background :#ECECEC,
+    whiteColor :#FFF,
+    error :#c80307
+
+);
+
+$theme-font:'Open Sans', sans-serif;
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+$label-ios-text-color:rgb(46,46,46);
+$label-ios-text-color-focused:black;
+$text-input-ios-highlight-color-valid: #47C3BD;
+$text-input-ios-highlight-color: #47C3BD;
+$text-input-ios-show-valid-highlight: #47C3BD;
+$text-input-ios-show-invalid-highlight:red;
+$text-input-ios-highlight-color-invalid:red;
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+$label-md-text-color:rgb(46,46,46);
+$label-md-text-color-focused:black;
+$text-input-md-highlight-color-valid: #47C3BD;
+$text-input-md-highlight-color: #47C3BD;
+$text-input-md-show-valid-highlight: #47C3BD;
+$text-input-md-show-invalid-highlight:red;
+$text-input-md-highlight-color-invalid:red;
+.picker-opt-selected {
+    color: rgb(38, 207, 198) !important;
+}
+.picker-button{
+    color: rgb(38, 207, 198) !important;   
+}
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+$theme-color:#2978BD;
+
+@import "roboto";
+@import "noto-sans";

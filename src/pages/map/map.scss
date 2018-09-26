@@ -1,0 +1,58 @@
+page-map {
+    .gmnoscreen {
+        display: none !important;
+    }
+    .price{
+        position: absolute;
+        left: 2.0vw;
+        top: 7%;
+        font-size: 16px;
+        /*font-family: cursive;*/
+    }
+    .price1{
+        position: absolute;
+        left: 3.0vw;
+        top: 7%;
+        font-size: 16px;
+        /*font-family: cursive;*/
+    }
+    .gmnoprint {
+        display: none !important;
+    }
+    .compas {
+        position: absolute;
+        top: 50%;
+        right: 0vmax;
+        opacity: 0.9;
+        width: 20%;
+        background: transparent;
+    }
+    .search_bar {
+        height: 7.2%;
+        background-color: white;
+        border-radius: 0.45rem;
+        position: absolute;
+        width: 90%;
+        top: 14%;
+        margin-left: 5%;
+        padding: 2% 2% 2% 4%;
+        font-weight:600;
+        box-shadow: 0px 9px 30px 4px rgba(178, 178, 178, 0.7);
+        .search_icon {
+            width: 3.5vw;
+            float: left;
+            margin-top: 1.5vh;
+        }
+        .search_label {
+            margin-top: 0.8vh;
+            float: left;
+            opacity: 0.9;
+            font-size: 1.7rem;
+            color: rgb(0, 203, 193);
+            padding-left: 1.0rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

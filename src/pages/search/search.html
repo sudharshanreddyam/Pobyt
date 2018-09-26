@@ -1,0 +1,38 @@
+<ion-header [ngStyle]="{'background-color':'white'}">
+    <ion-navbar>
+        <ion-buttons right>
+            <button ion-button icon-only (click)="dismiss()" class="search-modal">
+                <ion-icon name="arrow-down"></ion-icon>
+            </button>
+        </ion-buttons>
+        <!--ion-title>Search</ion-title-->
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce >
+  <div (swipe)="dismiss()">
+    <div class="searchout">
+      <ion-searchbar [(ngModel)]="autocomplete.query" (ionInput)="updateSearch()" (ionCancel)="dismiss()" placeholder="Where to?">
+      </ion-searchbar>
+    </div>
+    <div class="defined-place near-me" (click)="nearBy()">
+        <ion-icon class="icon" name="ios-locate-outline"></ion-icon>
+        <div class="place-name">Near me</div>
+    </div>
+    <ion-list>
+        <ion-item tappable *ngFor="let item of autocompleteItems" (click)="chooseItem(item)" text-wrap>
+            <ion-icon name="pin">
+            </ion-icon>
+            {{ item.description }}
+        </ion-item>
+    </ion-list>
+    <div class="defined-places-list" [hidden]="hideDefinedlist">
+        <div class="recentText">POPULAR SEARCHES</div>
+
+        <div class="defined-place" *ngFor="let place of places" (click)="definedItemSelected(place)">
+            <ion-icon name="pin"></ion-icon>
+            <div class="place-name">{{place}}</div>
+        </div>
+    </div>
+  </div>
+</ion-content>

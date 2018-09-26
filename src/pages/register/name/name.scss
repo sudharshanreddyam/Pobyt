@@ -1,0 +1,129 @@
+page-name {
+    .close-img {
+        height: 2.50rem;
+        float: left;
+        margin-left: 3.0rem;
+        margin-top: 4.0rem;
+        width: 2.30rem;
+    }
+    .back-img {
+        height: 3.5vmax;
+        float: right;
+        margin-right: 4vmax;
+        margin-bottom: 1vmax;
+        display: none;
+    }
+    .welcome-label span {
+        font-weight: 600;
+    }
+    .welcome-label {
+        text-align: left;
+        font-size: 4.12vmax;
+        margin-left: 8.13vw;
+        margin-bottom: 0vw;
+        margin-top: 3.44vh;
+        margin-right: 0vh;
+    }
+    .pobyt-back{
+      margin:5%;
+      width:5%;
+    }
+    .pobyt-close{
+      margin:5%;
+      width:5%;
+      margin-top:6%;
+      float:right;
+    }
+    .welcome-label{
+      margin-left: 8.6vw;
+      text-align: left;
+      font-size: 8.0vw;
+      margin-bottom:0px;
+      margin-top: 3.44vh;
+      color: rgb(0,0,0);
+      opacity: 0.66;
+    }
+    .info-label {
+        margin-left: 8.6vw;
+        text-align: left;
+        font-size: 6.0vw;
+        /*margin-top: 3.0vh;*/
+        color: rgb(0,0,0);
+        opacity: 0.66;
+    }
+    .names-item {
+        margin-left: 8.13vw;
+        margin-right: 8.13vw;
+        .item-inner{
+            padding:0vmax !important;
+            border-bottom: 0.37vh solid rgb(176, 176, 176) !important;
+        }
+    }
+    .names-item .label,
+    .gender-label .label {
+        opacity: 0.8 !important;
+    }
+    .gender-label {
+        .label{
+            margin-bottom: 0vmax;
+            margin-top: 0vmax;
+            margin-left: 8.66vw;
+            margin-right:0vmax;
+        }
+    }
+    .gender-item {
+        .item-inner{
+            padding:0vmax !important;
+        }
+        .label{
+            margin-bottom: 0vmax;
+            margin-top: 0vmax;
+        }
+    }
+    .gender-item img {
+      width: 5.86vmin !important;
+      height: 11.7vmin !important;
+      margin-top: 2.9vmin !important
+    }
+    .gender-item {
+        float: left;
+        margin-left: 5.33vw;
+    }
+    .segment-button.segment-activated {
+        background-color: rgb(71, 195, 189) !important;
+        border-color: rgb(71, 195, 189) !important;
+        height: 18.7vmin !important;
+        width: 10.60vmin !important;
+    }
+    .segment-button {
+        margin-left: 2.66vw !important;
+        border-radius: 0vmax !important;
+        background-color: rgb(216, 216, 216) !important;
+        border-color: rgb(216, 216, 216) !important;
+        height: 18.7vmin !important;
+        width: 10.60vmin !important;
+    }
+    .button.activated{
+        background-color: rgb(38, 207, 198) !important;
+    }
+    .go-btn {
+        background-color: rgb(38, 207, 198);
+        box-shadow: 0rem 0.1rem 0.35rem 0.1rem rgba(0, 0, 0, 0.5);
+        width: 15.73vw;
+        height: 9.0vh;
+        border-radius: 0.45rem;
+        float: right;
+        margin-right: 9.33vw;
+    }
+    .go-img {
+        height: 5.17vh;
+        margin-top: 1.72vh;
+        margin-bottom: 1.72vh;
+    }
+
+    .invalid{
+        margin-bottom: 1%;
+        box-shadow: 0 0px 5px rgba(250, 8, 8, 0.8);
+        width:99%;
+    }
+}

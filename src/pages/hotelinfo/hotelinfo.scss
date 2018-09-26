@@ -1,0 +1,123 @@
+page-hotelinfo {
+
+	height:100%;
+	
+    .slide-zoom{
+	   height:100%;
+	}
+
+	.hotelSlides{
+		height:36%;
+		img{
+			width:100%;
+			height:100%;
+		}
+	}
+	.h-info{
+        height : 18%;
+        background-color: #FFFFFF;
+        position:relative;
+    }
+	.h-name{
+        font-size: 5vw;
+        font-weight: 600;
+        margin-top: 1vmax;
+        margin-left: 2vmax;        
+    }
+    .h-address{
+        font-size: 3.5vw;
+	    font-weight: 500;
+	    margin-left: 2vmax;
+    }
+    .h-distance{
+        font-size: 4vw;
+        font-weight: 600;
+        position: absolute;
+        right: 2%;
+        top: 0.7vh;
+    }
+    .h-rating{
+	    margin-left: 2vmax;
+        width: 12vmax;
+    }
+    .h-stay-cost{
+        width:94%;
+        height:30%;
+        margin:0 3%;
+        padding-top:3%;
+        overflow:hidden;
+        .h-min-stay{
+            float:left;
+            width:50%;
+            font-size: 4vw;
+            .h-min-price,.h-min-hr{
+                font-weight:600;
+            }
+        }
+        .h-min-cost{
+            float:left;
+            text-align:right;
+            width:50%;
+            font-size: 4vw;
+            .symbol,.hotel-priceMin,.price-diff,.minumum{
+                font-weight: 600;
+            }
+        }
+    }
+    .h-info-divider{
+        border-bottom: 1px solid rgba(71, 195, 189, 1);
+        margin: 2vmax 2vmax 1vmax 2vmax;
+    }
+    super-tabs{
+        height:44%;
+    }
+    super-tabs-toolbar .toolbar,.toolbar-background{
+		background-color: rgba(153, 222, 219, 0.33);
+    }
+    super-tabs-toolbar > ion-toolbar.toolbar .tab-buttons-container .tab-buttons super-tab-button.title-only .title{
+    	font-weight:600;
+    	font-size: 1.4rem;
+    	text-transform: capitalize;
+    }
+    super-tabs-toolbar > ion-toolbar.toolbar .tab-buttons-container .tab-buttons super-tab-button{
+        min-width: auto !important;
+    }
+    .buffer-info{
+        font-size: 2.5vw;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0.6vw;
+       /* position: fixed;*/
+        bottom: 6.5vh;
+        /*idth:65%;*/
+    }
+    .swiper-pagination-bullet{
+        background:#f9f7f7;
+    }
+
+    .header{
+        background:none;
+    }
+    .scroll-content{
+        margin-top:0px !important;
+        margin-bottom:0px !important;
+    }
+    .pobyt-close{
+        margin: 4% 4% 4% 0;
+        width: 11%;
+        border-radius: 0 3px 3px 0;
+    }
+    super-tab-button.selected .title{
+        text-decoration: underline !important;
+        font-weight: bold !important;
+    }
+    super-tab-button .title{
+        color: rgb(0, 203,193);
+    }
+    super-tabs-toolbar > ion-toolbar.toolbar .tab-buttons-container .indicator {
+      background-color: transparent !important;
+    }
+}
+
+

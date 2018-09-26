@@ -1,0 +1,27 @@
+<!-- Generated template for the HistoryCardComponent component -->
+
+<div class="booking-history-container" (click)="BookingDetails(booking)">
+	<div class="booking-parent">
+		<div class="bookedHotel-detail-container">
+		<ion-grid>
+			<ion-row>
+			  <ion-col col-9 class="booking-date">{{booking.checkIn}}
+			  </ion-col>
+			  <ion-col  [class]="booking.status" class="status">{{booking.status}}
+			  </ion-col>
+			</ion-row>
+			<ion-row>
+			  <ion-col class="hotel-name">{{booking.hotelName}}
+			  </ion-col>
+			</ion-row>
+			<ion-row>
+			  <ion-col class="hotel-address">{{booking.city}} , {{booking.state}}     
+			  </ion-col>
+			</ion-row>
+		</ion-grid>
+		</div>
+		<div class="viewDetails-container">
+			View Details
+		</div>
+	</div>
+</div>

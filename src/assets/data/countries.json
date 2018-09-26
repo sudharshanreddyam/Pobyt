@@ -1,0 +1,40 @@
+[
+{
+    "country": "India",
+    "countryImg": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+    "countryCode": "+91",
+    "countryAlpha": "IN"
+  },
+  {
+    "country": "US",
+    "countryImg": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+    "countryCode": "+1",
+    "countryAlpha": "US"
+  },
+  {
+    "country": "Saudi Arabia",
+    "countryImg": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg",
+    "countryCode": "+966",
+    "countryAlpha": "SA"
+  },
+  {
+    "country": "China",  
+    "countryImg": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
+    "countryCode": "+86",
+    "countryAlpha": "CN"
+  },
+  {
+    "country": "Egypt",  
+    "countryImg": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg",
+    "countryCode": "+20",
+    "countryAlpha": "EG"
+  },
+  {
+    "country": "Sri Lanka",  
+    "countryImg": "https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg",
+    "countryCode": "+94",
+    "countryAlpha": "LK"
+  }
+
+
+]

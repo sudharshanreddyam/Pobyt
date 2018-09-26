@@ -1,0 +1,14 @@
+<!--
+  Generated template for the AmenitiesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content no-bounce>
+	<div class="amenities-container">
+       <div class="col col-50 inlineblock" *ngFor="let amenity of amenities">
+          <div class="amenity-img floatleft" ><img src={{amenity.img}}></div>
+          <div class="amenity-text floatleft">{{amenity.text}}</div>
+     	</div>
+	</div>
+</ion-content>

@@ -1,0 +1,107 @@
+page-updateotp {
+	.close-img {
+        height: 2.50rem;
+        float: left;
+        margin-left: 3.0rem;
+        margin-top: 4.0rem;
+        width: 2.30rem;
+    }
+    .info-label {
+        margin-left: 3.05rem;
+        text-align: left;
+        font-size: 2.0rem;
+        margin-top: 1.55rem;
+        color: rgb(0,0,0);
+        opacity: 0.66;
+    }    
+    .names-item {
+        margin-left: 3.25rem;
+        margin-right: 2.7rem;
+    }
+    .names-item .label{
+        opacity: 0.8 !important;
+    }
+    .button.activated{
+        background-color: rgb(38, 207, 198) !important;
+    }
+    .go-btn {
+        background-color: rgb(38, 207, 198);
+        box-shadow: 0rem 0.1rem 0.35rem 0.1rem rgba(0, 0, 0, 0.5);
+        width: 5.9rem;
+        height: 5.75rem;
+        border-radius: 0.45rem;
+        float: right;
+        margin-right: 3.5rem;
+        margin-top: 2.0rem;
+    }
+    .go-img {
+        height: 3.45rem;
+        margin: 1.15rem
+    }
+    .mobile-row{
+        border-radius: 1.4rem;
+        width: 83%;
+        margin-left: 3.0rem;
+        margin-top: 3.5rem;
+        box-shadow: 0rem 0.1rem 0.5rem 0rem rgba(0, 0, 0, 0.5);
+        .country-label{
+            width:15%;
+            background-color: rgba(38,207,198,0.3) !important;
+            border-top-left-radius: 1.4rem;
+            border-bottom-left-radius: 1.4rem;
+            .label{
+                margin-left: 0.95rem;
+                margin-right:0.7rem;
+                margin-bottom:1.05rem;
+                margin-top:1.0rem;
+                font-size: 2.3rem;
+            }
+        }
+        .mobile-label{
+            .label{
+                font-size: 2.5rem;
+                letter-spacing: 0.265rem;
+                margin-top: 0.9rem;
+                margin-left: 2.0rem;
+                margin-right: 3.0rem;
+                margin-bottom: 0.9rem;
+            }
+        }
+    }
+    .otp {
+        ion-input{
+            margin-left: 10vmax;
+            margin-top: 1vmax;
+        }
+        $char-w: 2.9vmax;
+        $gap: 1.2*$char-w;
+        $n-char: 6;
+        $in-w: $n-char*($char-w + $gap);    
+        input {
+            display: block;
+            border: none;
+            padding: 0;
+            width: $in-w;
+            background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey $char-w, transparent 0, transparent $char-w + $gap) 0 100%/ #{$in-w - $gap} 2px no-repeat;
+            font-weight: 600;
+            margin-top: 1rem;
+            font-size: 5vmax;
+            letter-spacing: $gap;
+            &:focus {
+                outline: none;
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+    .otp-label {
+        margin-left: 6.25rem;
+        margin-right: 6.25rem;
+        font-size: 1.3rem;
+    }
+    .resend-label {
+        text-align: left;
+        margin-left: 3.25em !important;
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+}

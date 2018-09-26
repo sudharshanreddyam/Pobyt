@@ -1,0 +1,138 @@
+page-verify-number {
+    .pobyt-back{
+        margin:5%;
+        width:5%;
+    }  
+
+    .info-label {
+        margin-left: 8.13vw;
+        text-align: left;
+        font-size: 6vw;
+        margin-top: 4vh;
+        color: #000;
+        white-space: normal;
+    }
+    .hideselect {
+        display: none;
+    }
+    .button.activated{
+        background-color: rgb(38, 207, 198) !important;
+    }
+    .go-btn {
+        background-color: rgb(38, 207, 198);
+        box-shadow: 0rem 0.1rem 0.35rem 0.1rem rgba(0, 0, 0, 0.5);
+        width: 15.73vw;
+        height: 9.0vh;
+        border-radius: 0.45rem;
+        float: right;
+        margin-right: 9.33vw;
+        margin-top: 3.5vh;
+    }
+    .go-img {
+        height: 5.17vh;
+        margin-top: 1.72vh;
+        margin-bottom: 1.72vh;
+    }    
+    .mobile-row{
+        border-radius: 1.4rem;
+        width: 83%;
+        margin-left: 8.0vw;
+        margin-top: 5.24vh;
+        box-shadow: 0rem 0.1rem 0.5rem 0rem rgba(0, 0, 0, 0.5);
+        .country-label{
+            background-color: rgba(38,207,198,0.3) !important;
+            border-top-left-radius: 1.4rem;
+            border-bottom-left-radius: 1.4rem;
+            align-items: center;
+            text-align: center;
+            .labl{
+                margin-left: 2.53vw;
+                margin-right:1.86vw;
+               /* margin-bottom: 23%;
+                margin-top: 23%;*/
+                font-size: 6.74vw;
+                margin-bottom: 1.34vh;
+                margin-top: 1.34vh;
+            }
+        }
+        .mobile-input{
+          align-items: center;
+            .text-input{
+                font-size: 6.74vw;
+                letter-spacing: 0.265rem;
+                margin-top: 1.34vh;
+                margin-left: 5.33vw;
+                margin-right: 8.0vw;
+                margin-bottom: 1.34vh;
+            }
+        }
+    }
+    .password-row{
+        padding-top: 1vh;
+    }
+    .invalid{
+        margin-bottom: 1%;
+        box-shadow: 0 0px 5px rgba(250, 8, 8, 0.8);
+        width:99%;
+    }
+    .names-item {
+        margin-left: 8.13vw;
+        margin-right: 8.13vw;
+        .item-inner{
+            padding:0vmax !important;
+            border-bottom: 0.37vh solid rgb(176, 176, 176) !important;
+        }
+    }
+    .names-item .label{
+        opacity: 0.8 !important;
+    }
+    .mobile-label{
+        .labl{
+          font-size: 6.74vw;
+            letter-spacing: 0.265rem;
+            margin-top: 1.34vh;
+            margin-left: 5.33vw;
+            margin-bottom: 1.34vh;
+            letter-spacing: 0.265rem;
+        }
+    }
+    .otp {
+        ion-input{
+            margin-left: 10vmax;
+            margin-top: 1vmax;
+        }
+        $char-w: 2.9vmax;
+        $gap: 1.2*$char-w;
+        $n-char: 6;
+        $in-w: $n-char*($char-w + $gap);
+        input {
+          display: block;
+          border: none;
+          padding: 0;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 6.9vw, transparent 0, transparent 11.5vw) 0 100%/64.9vw 2px no-repeat;
+          font-weight: 600;
+          margin-top: 1.49vh;
+          font-size: 9.5vw;
+          letter-spacing: 6.3vw;
+            &:focus {
+                outline: none;
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+    .otp-label {
+        margin-left: 16.66vw;
+        margin-right: 16.66vw;
+        font-size: 3.24vmin;
+    }
+    .resend-label {
+        text-align: left;
+        margin-left: 9.66vw !important;
+        font-weight: 600;
+        font-size: 2.09vmax;
+        margin-top: 5.62vh;
+    }
+}

@@ -1,0 +1,215 @@
+page-hotelslider {
+    $white: #FFFFFF;
+    width: 100%;
+    height: 36%;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    .slide-zoom {
+        height: 100%;
+    }
+    .swiper-slide {
+      width: 80% !important;
+    }
+    ion-content,
+    .scroll-content {
+        background: none !important;
+    }
+    .col{
+        padding:2px !important;
+    }
+    .white-bg{
+        display:none;
+        height: 25%;
+        width: 100%;
+        background-color: white;
+        bottom: 0;
+        position: absolute;
+        left: 0;
+    }
+    .hotelSlider {
+        width: 100%;
+        height: 78%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: rgb(216, 216, 216);
+        position: relative;
+        border-radius: 3px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        .sliderContent {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .hotelDetails {
+        display: block;
+        height: 25%;
+    }
+    .hotelFare {
+        width: 32%;
+        padding: 8px 0;
+        height: auto;
+    }
+    .hotelMinCost{
+        background-color: rgba(255,255,255,0.8);
+        color: rgb(0,0,0);
+        height: auto;
+        width: auto;
+        text-align: center;
+        position: absolute;
+        font-weight: 600;
+        padding: 1% 0.5%;
+    }
+    span.farecurrency {
+        font-size: .7em;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0.8vmax;
+        letter-spacing: 0px;
+    }
+    span.hotel-priceMin {
+        font-size: 1.775em;
+        font-weight: 600;
+        margin-left: -0.9vmax;
+        margin-right: -1.3vmax;
+        letter-spacing: 0vw;
+    }
+
+    span.hotel-price-diff {
+        font-size: 1.775em;
+        display: inline-block;
+        vertical-align: bottom;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        margin: 0.0vmax -0.5vmax -0.6vmax -0.5vmax;
+        letter-spacing: 0px;
+        font-weight: 100;
+        color: #000;
+    }
+    .hotelMinCost .minumum {
+        font-size: 0.475em;
+        display: inline-block;
+        margin-left: -0.8vmax;
+        margin-top: 1.8vmax;
+    }
+    .minDuration {
+        background-color: rgba(255,255,255,0.8);
+        color: rgb(0,0,0);
+        font-weight: 600;
+        height: auto;
+        width: auto;
+        text-align: center;
+        padding: 1% 3%;
+        position: absolute;
+        font-size: 0.78em;
+        right: 0%;
+    }
+   
+    .h-info{
+        height : 27%;
+        margin-top:-2%;
+        background-color: white;
+    }
+    .h-Name{
+        text-align: left;
+        font-size: 5vw;
+        margin-top: 0.5vmax;
+        margin-left: 1vw;
+        font-weight: 600;
+        margin-bottom: -1.0vmax;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width:100%;
+    }
+    div#h-Dist{
+        text-align: right;
+        font-size: 4.5vw;
+        font-weight: 600;
+        margin-top: 0.5vmax;
+        margin-right: 1vw;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width:100%;
+    }
+    .h-rating{
+        margin-left: 1vmax;
+        width: 10vmax;
+        #h-ratingType{
+            width:auto;
+            text-transform:capitalize;
+            color:#fff;
+            font-size:3vw;
+        }
+    }
+    /*No Result style*/
+    ion-card {
+        border-radius: 10px !important;
+        img {
+            width: 15% !important;
+            margin: 10px auto;
+        }
+        .grid{
+            padding-top: 6% !important;
+        }
+        .card-content-ios{
+            padding: 0px 33px 10px !important;
+        }
+        .notheretext{
+            font-size: 3.2vw;
+            text-align: center;
+        }
+        .OperatingCities{
+            text-transform: uppercase;
+            font-size: 3.2vw;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 4%;
+        }
+        .cityName{
+            font-size: 3vw;
+        }
+        .PointerImg{
+            width: 45% !important;
+            margin: 12% 50%;
+        }
+    }
+
+    .Budget{
+        background:rgb(95, 173, 16);
+    }
+    .Premium{
+        background:rgb(245, 145, 57);
+    }
+    .Comfort{
+        background:rgb(58, 141, 239);
+    }
+
+    #TempFullScreenContainer {
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+    }
+    #TempFullParent {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+    }
+    #TempFullImg,
+    #TempFullcontent {
+        margin: 0 auto;
+    }
+    #TempFullImg img {
+        width: 12%;
+    }
+    #TempFullcontent {
+        color: #FFD800;
+        font-size: 3vmax;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,55 @@
+page-intro {
+    .skip-btn{
+        color: #828080 !important;
+        float: right !important;
+        font-size: 5vw;
+        margin-right: 15px;
+        font-weight: lighter;
+        margin-top: 25px;
+    }
+
+    .intro-btn{
+        position: absolute;
+        bottom:5px;
+        width:100%;
+    }
+
+    .pre-btn{
+        border: 2px solid #2EBBB4 !important;
+        color: #000 !important;
+    }
+
+    .nex-btn{
+        background-color: #2EBBB4 !important;
+        color: #fff !important;
+    }
+    ion-slide {
+        background-color: #fff;
+
+    }
+
+    .intro-img {
+        
+        height: 45%;
+        background-size: cover;
+        background-position: center;
+        flex-wrap: nowrap;
+        margin-top: 14%;
+    }
+
+    .slide-zoom {
+        height:100%
+    }
+
+    .intro-header {
+        font-size: 5.5vw;
+        font-weight: bold;
+        margin-top: 10%;
+        margin-bottom: 0px;
+
+    }
+    .intro-p {
+        font-size: 3.9vw;
+        margin-bottom: 0px;
+    }
+}

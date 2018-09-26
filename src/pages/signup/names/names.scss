@@ -1,0 +1,97 @@
+names {
+    .close-img {
+        height: 3.5vmax;
+        float: left;
+        margin-left: 4vmax;
+        margin-top: 3vmax;
+    }
+    .back-img {
+        height: 3.5vmax;
+        float: right;
+        margin-right: 4vmax;
+        margin-bottom: 1vmax;
+        display: none;
+    }
+    .welcome-label span {
+        font-weight: 600;
+    }
+    .welcome-label {
+        text-align: left;
+        font-size: 5vmax;
+        margin-left: 4vmax;
+        margin-bottom: 0vmax;
+        margin-top: 2vmax;
+    }
+    .info-label {
+        margin-left: 4vmax;
+        text-align: left;
+        font-size: 3.0vmax;
+        opacity: 0.5;
+        margin-bottom: 0vmax;
+        margin-top: 1vmax;
+    }
+    .names-item .label,
+    .gender-label .label {
+        opacity: 0.5 !important;
+        margin-top: 0vmax;
+        margin-bottom: 0vmax;
+    }
+    .gender-label {
+        margin-bottom: 0vmax;
+        margin-top: 0vmax;
+    }
+    .gender-item {
+        .label{
+            margin-bottom: 0vmax;
+            margin-top: 0vmax;   
+        }
+    }
+    .gender-item img {
+        width: 3vmax !important;
+        padding-top: 2vmax !important;
+        padding-bottom: 0vmax !important;
+    }
+    .names-item {
+        margin-left: 4vmax;
+        margin-right: 4vmax;
+    }
+    .gender-label {
+        float: left;
+        margin-left: 4vmax;
+    }
+    .gender-item {
+        float: left;
+        margin-left: 3vmax;
+    }
+    .segment-button.segment-activated {
+        background-color: rgb(71, 195, 189) !important;
+        border-color: rgb(71, 195, 189) !important;
+        height: 9vmax;
+    }
+    .segment-button {
+        margin-left: 1rem !important;
+       border-radius: 0px !important;
+        background-color: rgb(216, 216, 216) !important;
+        border-color: rgb(216, 216, 216) !important;
+        height: 9vmax !important;
+    }
+    .button.activated{
+        background-color: rgb(38, 207, 198) !important;
+    }
+    .go-btn {
+        background-color: rgb(38, 207, 198);
+        box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.5);
+        width: 8vmax;
+        height: 8vmax;
+        border-radius: 3px;
+        float: right;
+        margin-right: 4vmax;
+    }
+    .go-img {
+        width: 3.0vmax;
+    }
+    .invalid{
+        margin-bottom: 1%;
+        box-shadow: 0 0px 5px rgba(250, 8, 8, 0.8);
+    }
+}

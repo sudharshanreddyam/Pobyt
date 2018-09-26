@@ -1,0 +1,48 @@
+<!-- Generated template for the MobileComponent component -->
+<ion-content no-bounce no-padding no-margin>			
+    <form [formGroup]="mobileForm" ng-submit="onSubmit()" no-padding no-margin>
+        <ion-row no-padding no-margin>
+            <ion-col no-padding no-margin>
+                <img class='close-img' src="assets/signup/close.png" (click)="onClose()">
+            </ion-col>
+            <ion-col no-padding no-margin>
+                <img class='back-img' src="assets/signup/back.png" (click)="onBack()">
+            </ion-col>
+        </ion-row>
+        <ion-row no-padding no-margin>
+            <ion-label class='welcome-label'>
+                Almost done.
+            </ion-label>
+        </ion-row>
+        <ion-row no-padding no-margin>
+            <ion-label class='info-label'>
+                What's is your mobile number?
+            </ion-label>
+        </ion-row>
+        <ion-row class='mobile-row' no-padding no-margin>
+            <ion-col col-2 class='country-label' (click)="selectCountry()" no-padding no-margin>
+                <ion-label>{{countryselected.countryCode}}
+                </ion-label>
+            </ion-col>
+            <ion-col class='mobile-input' no-padding no-margin>
+                <ion-input placeholder='ENTER MOBILE NUMBER' pattern="[0-9]*" minlength="10" maxlength="10" type='tel'[class.invalid]="!mobileForm.controls.contactNumber.valid && (mobileForm.controls.contactNumber.dirty)" formControlName="contactNumber" name="contactNumber" [(ngModel)]="contactNumber"> 
+                </ion-input>
+            </ion-col>
+        </ion-row>
+        <ion-row no-padding no-margin>
+            <ion-col no-padding no-margin>
+                <button ion-button no-padding no-lines no-border class="go-btn" [disabled]="mobileForm.invalid" (click)="onSubmit()">
+                    <img src='assets/signup/go.png' class="go-img">
+                </button>
+            </ion-col>
+        </ion-row>
+    </form>
+    <ion-row class="hideselect">
+        <ion-col >
+            <ion-label>Select country</ion-label>
+            <ion-select id="selectTag" [(ngModel)]="countryselected">
+                <ion-option *ngFor="let country of countryList" [value]=country attr.data-code={{country.countryCode}}>{{country.country}} ({{country.countryCode}})</ion-option>
+            </ion-select>
+        </ion-col>
+    </ion-row>
+</ion-content>

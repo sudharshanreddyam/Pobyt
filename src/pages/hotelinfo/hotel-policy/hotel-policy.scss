@@ -1,0 +1,26 @@
+page-hotel-policy {
+	.policymainTxt{
+		span{
+			line-height:1.2;
+			font-size: 2vmax;
+		}
+	}
+	.policyTnC{
+		line-height:1.2;	
+		font-size: 2vmax;
+		margin:5px auto;
+		span{
+			color:blue;
+			text-decoration: underline;
+			font-weight:bold;
+		}
+	}
+	li{
+    	padding-top: 2vmax;
+    	padding-right:1.5vmax;
+	}
+    
+    .scroll-content{
+    	margin-bottom: 6vmax !important;
+	}
+}

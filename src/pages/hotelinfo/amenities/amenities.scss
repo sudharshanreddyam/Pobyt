@@ -1,0 +1,30 @@
+page-amenities {
+	font-size: 2.0vmax;
+    font-weight: 600;
+    .row{
+		width:100%;
+	}
+	.col-50{
+		width: 42%;
+	    padding: 1.5%;
+	    margin-left: 7%;
+	}
+	.amenities-container{
+		margin-top: 4%;
+	}
+	.amenity-img{
+		width:15%;
+	    padding: 3px;
+    	margin-right: 5px;
+	}
+	.amenity-text{
+		width:80%;
+		font-size: 2vmax;
+	}
+	.floatleft{
+		float:left;
+	}
+	.inlineblock{
+		display:inline-block;
+	}
+}

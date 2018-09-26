@@ -1,0 +1,95 @@
+<!--
+  Generated template for the NamePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border style="background:transparent;">
+    <img src="assets/buttons/left_arrow_signup.png" class="pobyt-back" (click)="this.navCtrl.pop()">
+    <img src="assets/buttons/cross_signup.png" class="pobyt-close" (click)="this.navCtrl.popToRoot()">
+    <!--ion-navbar hideBackButton>
+        <img src="assets/buttons/left_arrow_signup.png" class="pobyt-back" (click)="this.navCtrl.pop()">
+        <ion-title>Signup</ion-title>
+        <img src="assets/buttons/cross_signup.png" class="pobyt-close" (click)="this.navCtrl.pop()">
+    </ion-navbar-->
+</ion-header>
+<ion-content no-bounce>
+	<form [formGroup]="namesForm" ng-submit="onSubmit()" no-padding no-margin>
+		<!-- <ion-row no-padding no-margin>
+            <ion-col no-padding no-margin>
+                <img class='close-img' src="assets/signup/close.png" (click)="onClose()">
+            </ion-col>
+            <ion-col no-padding no-margin>
+                <img class='back-img' src="assets/signup/back.png" (click)="onBack()">
+            </ion-col>
+        </ion-row> -->
+	   <!--  <ion-row no-padding no-margin>
+	        <ion-label class='welcome-label'>
+	            Welcome to <span>Pobyt.</span>
+	        </ion-label>
+      </ion-row> -->
+      <ion-row no-padding no-margin>
+          <h1 class='welcome-label'>Welcome to <span style="font-weight:bold;">Pobyt</span></h1>
+      </ion-row>
+	    <ion-row no-padding no-margin>
+	      <ion-label class='info-label' no-padding no-margin>
+	        What's your name?
+	      </ion-label>
+	    </ion-row>
+	    <ion-row no-padding no-margin>
+	        <ion-item class='names-item' no-padding no-margin>
+	            <ion-label floating>FIRST NAME</ion-label>
+	            <ion-input tabindex="1" type="text" [class.invalid]="!namesForm.controls.firstName.valid && (namesForm.controls.firstName.dirty)" formControlName="firstName" name="firstName" [(ngModel)]="signUpData.firstName">
+	            </ion-input>
+	        </ion-item>
+	        <!-- <ion-item no-lines *ngIf="( namesForm.get('firstName').hasError('minlength') || namesForm.get('firstName').hasError('required') ) && namesForm.get('firstName').touched">
+				<div class="error" *ngIf="namesForm.get('firstName').hasError('required') && namesForm.get('firstName').touched">
+				Name is required
+				</div>
+				<div class="error" *ngIf="namesForm.get('firstName').hasError('minlength') && namesForm.get('firstName').touched">
+				Minimum of 4 characters
+				</div>
+			</ion-item> -->
+	    </ion-row>
+	    <ion-row no-padding no-margin>
+	        <ion-item class='names-item' no-padding no-margin>
+	            <ion-label floating>LAST NAME</ion-label>
+	            <ion-input tabindex="2" type="text" [class.invalid]="!namesForm.controls.lastName.valid && (namesForm.controls.lastName.dirty || registerAttempt)" formControlName="lastName" name="lastName" [(ngModel)]="signUpData.lastName">
+	            </ion-input>
+	        </ion-item>
+	        <!-- <ion-item no-lines *ngIf="( namesForm.get('lastName').hasError('minlength') || namesForm.get('lastName').hasError('required') ) && namesForm.get('lastName').touched">
+				<div class="error" *ngIf="namesForm.get('lastName').hasError('required') && namesForm.get('lastName').touched">
+				Last Name is required
+				</div>
+				<div class="error" *ngIf="namesForm.get('lastName').hasError('minlength') && namesForm.get('lastName').touched">
+				Minimum of 4 characters
+				</div>
+			</ion-item> -->
+	    </ion-row>
+	    <ion-row no-padding no-margin>
+	    	<ion-item class='gender-label' no-lines no-padding no-margin>
+	        	<ion-label >GENDER (Optional)</ion-label>
+	    	</ion-item>
+	    </ion-row>
+	    <ion-row no-padding no-margin>
+	        <ion-col col-4 no-padding no-margin>
+	            <ion-item no-padding no-lines no-border no-margin class='gender-item'>
+	                <ion-segment no-border no-padding no-margin [(ngModel)]="signUpData.gender" [ngModelOptions]="{standalone: true}">
+	                    <ion-segment-button tabindex="3" value="Male" no-padding no-margin no-border>
+	                        <img src='assets/signup/male.png'>
+	                    </ion-segment-button>
+	                    <ion-segment-button tabindex="4" value="Female" no-padding no-margin no-border>
+	                        <img src='assets/signup/female.png'>
+	                    </ion-segment-button>
+	                </ion-segment>
+	            </ion-item>
+	        </ion-col>
+	        <ion-col no-padding no-margin>
+	        	<button tabindex="5" ion-button no-padding no-lines no-border no-margin class="go-btn" [disabled]="namesForm.invalid" (click)="onSubmit()">
+	        		<img src='assets/signup/go.png' class="go-img">
+	        	</button>
+	        </ion-col>
+	    </ion-row>
+	</form>
+</ion-content>
+

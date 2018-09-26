@@ -1,0 +1,32 @@
+[
+	{
+	    "title": "Flat 10%",
+	    "id": "10001",
+	    "code":"FLT10",
+	    "content": "Get Flat 10% discount when you book room for 3 or more hours"
+	},
+	{
+	    "title": "Flat 15%",
+	    "id": "10002",
+	    "code":"FLT15",
+	    "content": "Get Flat 15% discount when you book room for 5 or more hours"
+	},
+	{
+	    "title": "25% Cashback",
+	    "id": "10003",
+	    "code":"CB25",
+	    "content": "Get a cashback of 25%  for your first transaction with Paytm"
+	},
+	{
+	    "title": "Free SPA",
+	    "id": "10004",
+	    "code":"FSPA",
+	    "content": "Get a complimentary SPA service when you book room for 5 or more hours"
+	},
+	{
+	    "title": "30% OFF on next visit",
+	    "id": "10005",
+	    "code":"FLT10",
+	    "content": "Get Flat 30% discount on your next booking with Pobyt"
+	}
+]

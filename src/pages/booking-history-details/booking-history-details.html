@@ -1,0 +1,75 @@
+<!--
+  Generated template for the BookingHistoryDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar hideBackButton padding>
+		<ion-title>Booking History Details</ion-title>
+		<ion-buttons left>
+			<button ion-button icon-only (click)="this.navCtrl.pop()"><ion-icon name="ios-arrow-back"></ion-icon></button>
+		</ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-bounce>
+	<div class="booking-parent">
+		<div class="bookedHotel-detail-container">
+		<ion-grid>
+			<ion-row>
+			  <ion-col col-9 class="booking-date">{{booking.checkIn}}
+			  </ion-col>
+			  <ion-col  [class]="booking.status" class="status">{{booking.status}}
+			  </ion-col>
+			</ion-row>
+			<ion-row>
+			  <ion-col class="hotel-name">{{booking.hotelName}}
+			  </ion-col>
+			</ion-row>
+			<ion-row>
+			  <ion-col class="hotel-address">{{booking.location}} {{booking.city}}         
+			  </ion-col>
+			</ion-row>
+		</ion-grid>
+		</div>
+		<div class="c-booking-details">
+			<table class="tg">
+				<tr>
+					<td class="tg-lqy6">Booking ID:</td>
+					<td class="tg-9hbo">{{booking.bookingId}}</td>
+				</tr>
+				<tr>
+					<td class="tg-lqy6">Booking for:</td>
+					<td class="tg-9hbo">{{booking.firstName}} {{booking.lastName}}</td>
+				</tr>
+				<tr>
+					<td class="tg-lqy6">No. of hours:</td>
+					<td class="tg-9hbo">{{stayDuration.hours}}:{{stayDuration.mins}}</td>
+				</tr>
+				<tr>
+					<td class="tg-lqy6">Check-in Time:</td>
+					<td class="tg-9hbo">{{booking.checkIn}}</td>
+				</tr>
+				<tr>
+					<td class="tg-lqy6">Check-out Time:</td>
+					<td class="tg-9hbo">{{booking.checkOut}}</td>
+				</tr>
+			</table>
+	</div>
+	<div class="c-buffer-enddetails">
+		<div class="c-call-hotel-button">
+				<a class="nostyle" [attr.href]="'tel:' + hotelphonenumber"></a>
+				<div class="callhotel-text">Call Hotel</div>
+		</div>
+		<div class="c-reporthotel-button">
+				<a class="nostyle" [attr.href]="'tel:' + pobytphonenumber"></a>
+				<div class="c-reporthotel-text">Report Hotel</div>
+		</div>
+	</div>
+	<button ion-button class='pobyt-button' (click)="OpenBookingPage()">Book Again</button>
+	</div>
+</ion-content>

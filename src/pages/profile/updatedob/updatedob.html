@@ -1,0 +1,31 @@
+<!--
+  Generated template for the EmailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border style="background:transparent;">
+    <img src="assets/buttons/left_arrow_signup.png" class="pobyt-back" (click)="this.navCtrl.pop()">
+    <img src="assets/buttons/cross_signup.png" class="pobyt-close" (click)="this.navCtrl.popToRoot()">
+</ion-header>
+<ion-content no-bounce>
+	<form [formGroup]="emailForm" no-padding no-margin>
+        <ion-row class='info-row' no-padding no-margin>
+            <h1 class='welcome-label'>Update your Date of birth below</h1>
+        </ion-row>       
+        <ion-row no-padding no-margin>
+            <ion-item class='names-item' no-padding no-margin>
+                <ion-label floating>DATE OF BIRTH</ion-label>
+                <ion-datetime tabindex="2" displayFormat="DD MMM YYYY" [class.invalid]="!emailForm.controls.dateOfBirth.valid && (emailForm.controls.dateOfBirth.dirty || !validAge)" formControlName="dateOfBirth" (ionChange)="validateAge()" name="dateOfBirth" [(ngModel)]="dateOfBirth"></ion-datetime>
+            </ion-item>
+            <ion-item no-lines *ngIf="emailForm.get('dateOfBirth').touched && !validAge">
+                <div class="error">
+                	Age must be more than 18 years
+                </div>
+            </ion-item>
+        </ion-row>
+        <ion-row no-padding no-margin>
+            <button ion-button class="signout-btn" (click)="onSubmit()">Update</button>
+        </ion-row>
+    </form>
+</ion-content>

@@ -1,0 +1,51 @@
+page-updatefirstname {
+    .welcome-label {
+        margin-left: 8.6vw;
+        text-align: left;
+        font-size: 6vw !important;
+        margin-bottom: 0px;
+        margin-top: 4.44vh !important;
+        color: black;
+        opacity: 0.66;
+    }
+    .pobyt-back{
+      margin:5%;
+      width:5%;
+    }
+    .pobyt-close{
+      margin:5%;
+      width:5%;
+      margin-top:6%;
+      float:right;
+    }
+    .welcome-label{
+      margin-left: 8.6vw;
+      text-align: left;
+      font-size: 8.0vw;
+      margin-bottom:0px;
+      margin-top: 3.44vh;
+      color: rgb(0,0,0);
+      opacity: 0.66;
+    }
+    .names-item {
+        margin-left: 8.13vw;
+        margin-right: 8.13vw;
+        .item-inner{
+            padding:0vmax !important;
+            border-bottom: 0.37vh solid rgb(176, 176, 176) !important;
+        }
+    }
+    .names-item .label {
+        opacity: 0.8 !important;
+    }
+    .signout-btn{
+      margin-top: 8vh;
+      margin-left:34.6vw;
+      border-radius: 0.45rem;
+        background-color: rgb(0,203,193);
+        box-shadow: 0rem 0rem 0.35rem 0.1rem rgba(162,162,162, 0.5);
+    }
+    .signout-btn.activated{
+      background-color: rgb(0,203,193);
+    }
+}

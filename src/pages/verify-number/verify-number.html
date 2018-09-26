@@ -1,0 +1,103 @@
+<!--
+  Generated template for the VerifyNumberPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border style="background:transparent;">
+    <img src="assets/buttons/left_arrow_signup.png" class="pobyt-back" (click)="this.navCtrl.pop()">
+</ion-header>
+
+<ion-content no-bounce>
+    <form [formGroup]="resetForm" no-padding no-margin [hidden]="hideMobileScreen">
+        <ion-row no-padding no-margin>
+            <ion-label class='info-label' no-padding no-margin>
+                Enter the mobile number you used to signup
+            </ion-label>
+        </ion-row>    
+        <ion-row class='mobile-row' no-padding no-margin>
+            <ion-col col-3 class='country-label' (click)="selectCountry()" no-padding no-margin>
+                <p class="labl">{{signUpData.countryCode}}</p>
+            </ion-col>
+            <ion-col class='mobile-input' no-padding no-margin>
+                <ion-input no-padding no-margin tabindex="1" pattern="[0-9]*" minlength="10" maxlength="10" type='tel'[class.invalid]="!resetForm.controls.contactNumber.valid && (resetForm.controls.contactNumber.dirty)" formControlName="contactNumber" name="contactNumber" [(ngModel)]="signUpData.contactNumber">
+                </ion-input>
+            </ion-col>
+        </ion-row>
+        <ion-row class='password-row' no-padding no-margin>
+            <ion-item class='names-item' no-padding no-margin>
+                <ion-label floating>New Password</ion-label>
+                <ion-input type="password" [class.invalid]="!resetForm.controls.password.valid && (resetForm.controls.password.dirty)" formControlName="password" name="password" [(ngModel)]="signUpData.oldpassword">
+                </ion-input>
+            </ion-item>
+        </ion-row >
+        <ion-row class='password-row' no-padding no-margin>
+            <ion-item class='names-item' no-padding no-margin>
+                <ion-label floating>Re-enter Password</ion-label>
+                <ion-input type="password" [class.invalid]="!resetForm.controls.re_password.valid && (resetForm.controls.re_password.dirty)" formControlName="re_password" name="re_password" [(ngModel)]="signUpData.newPassword">
+                </ion-input>
+            </ion-item>
+        </ion-row >
+        <ion-item *ngIf="resetForm.controls.password.hasError('required') && resetForm.controls.password.touched" class="invalid">
+            <p>* Password is required!</p>
+        </ion-item>
+
+        <ion-item *ngIf="resetForm.controls.password.hasError('minlength') && resetForm.controls.password.touched" class="invalid">
+            <p>* Minimum password length is 3!</p>
+        </ion-item>
+
+        <ion-item *ngIf="resetForm.controls.password.hasError('maxlength') && resetForm.controls.password.touched" class="invalid">
+            <p>* Maximum password length is 10!</p>
+        </ion-item>
+
+        <ion-item *ngIf="resetForm.controls.re_password.hasError('pw_mismatch') && resetForm.controls.re_password.touched" class="invalid">
+            <p>* Passwords do not match!</p>
+        </ion-item>    
+        <ion-row no-padding no-margin>
+            <ion-col no-padding no-margin>
+                <button tabindex="2" ion-button no-padding no-lines no-border class="go-btn" [disabled]="resetForm.invalid" (click)="generateOtp()">
+                    <img src='assets/signup/go.png' class="go-img">
+                </button>
+            </ion-col>
+        </ion-row>
+    </form>
+    <ion-item class="hideselect">
+        <ion-label>Select country</ion-label>
+        <ion-select id="selectTag" (ionChange)="optionSelected()" [(ngModel)]="countryselected">
+            <ion-option *ngFor="let country of countryList" [value]=country attr.data-code={{country.countryCode}}>{{country.country}} ({{country.countryCode}})</ion-option>
+        </ion-select>
+    </ion-item>
+    <form [formGroup]="otpForm" no-padding no-margin *ngIf="hideMobileScreen" [hidden]="!hideMobileScreen">
+        <ion-row no-padding no-margin>
+            <ion-label class='info-label' no-padding no-margin>
+                Verify your number
+            </ion-label>
+        </ion-row>
+        <ion-row class='mobile-row' no-padding no-margin>
+            <ion-col col-3 class='country-label' no-padding no-margin>
+                <p class="labl">{{signUpData.countryCode}}
+                </p>
+            </ion-col>
+            <ion-col class='mobile-label' no-padding no-margin>
+                <p class="labl">{{signUpData.contactNumber}}
+                </p>
+            </ion-col>
+        </ion-row>
+        <ion-row class='otp' no-padding no-margin>
+            <ion-input tabindex="1" type='tel' pattern="[0-9]*" minlength="6" maxlength="6" [class.invalid]="!otpForm.controls.otp.valid && (otpForm.controls.otp.dirty)" formControlName="otp" name="otp" [(ngModel)]="otp"></ion-input>
+        </ion-row>
+        <ion-row no-padding no-margin>
+            <ion-label no-padding no-margin class='otp-label'>Enter the 6-digit code we`ve sent you.</ion-label>
+        </ion-row>
+        <ion-row no-padding no-margin>
+            <ion-col no-padding no-margin>
+                <ion-label class="resend-label" (click)="reSendOtp()">resend OTP</ion-label>
+            </ion-col>
+            <ion-col no-padding no-margin>
+                <button tabindex="2" ion-button no-padding no-lines no-border class="go-btn" [disabled]="otpForm.invalid" (click)="onSubmit()">
+                    <img src='assets/signup/go.png' class="go-img">
+                </button>
+            </ion-col>
+        </ion-row>
+    </form>
+</ion-content>

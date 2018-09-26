@@ -1,0 +1,6 @@
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="true"></ion-nav>
+<div id="network-status">
+	<div id="network-status-txt"></div>
+	<div id="network-status-close" (click)="hideNetworkStatus()">CLOSE</div>
+</div>

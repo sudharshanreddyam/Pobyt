@@ -1,0 +1,36 @@
+<ion-content no-bounce>
+    <ion-card class="incard">
+      
+      <ion-row nowrap class="swipe-row">
+          <div class="border">
+              <ion-row align-items-end nowrap style="height:100%;">
+                <ion-col>
+      
+                </ion-col>
+                <ion-col text-center>
+                  <p class="label">Hours</p>
+                </ion-col>
+                <ion-col></ion-col>
+                <ion-col text-center>
+                  <p class="label">Mins</p>
+                </ion-col>
+      
+              </ion-row>
+            </div>
+        <ion-col>
+          <ion-slides #hours (ionSlideDidChange)="slideChanged()">
+            <ion-slide class="swiper-slide" *ngFor="let hour of hoursAr;let i = index;">
+              <h3 [ngClass]="{'active':isHActive(i)}" class="swiperFont">{{hour}}</h3>
+            </ion-slide>
+          </ion-slides>
+        </ion-col>
+        <ion-col>
+          <ion-slides #minutes (ionSlideDidChange)="slideChanged()">
+            <ion-slide class="swiper-slide" *ngFor="let m of minAr; let j = index;">
+              <h3 [ngClass]="{'active':isMActive(j)}" class="swiperFont">{{m}}</h3>
+            </ion-slide>
+          </ion-slides>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+</ion-content>

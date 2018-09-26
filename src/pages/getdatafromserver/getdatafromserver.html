@@ -1,0 +1,27 @@
+<!--
+  Generated template for the GetdatafromserverPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar hideBackButton padding>
+    <ion-title>Select your city</ion-title>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="this.navCtrl.pop()"><ion-icon name="ios-arrow-back"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-searchbar (ionInput)="searchCountry($event)" 
+      placeholder="Search"></ion-searchbar>
+    <ion-list>
+      <button ion-item *ngFor="let city of cities" (click)='selectedCity(city)'>
+          {{city}}
+      </button>
+    </ion-list>
+</ion-content>

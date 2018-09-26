@@ -1,0 +1,118 @@
+page-mobile {
+	.hideselect {
+        display: none;
+    }
+	.close-img {
+        height: 2.50rem;
+        float: left;
+        margin-left: 3.0rem;
+        margin-top: 4.0rem;
+        width: 2.30rem;
+    }
+    .back-img {
+        height: 3.5vmax;
+        float: right;
+        margin-right: 4vmax;
+        margin-bottom: 1vmax;
+        display: none;
+    }
+    .welcome-label span {
+        font-weight: 600;
+    }
+    .pobyt-back{
+      margin:5%;
+      width:5%;
+  }
+    .pobyt-close{
+      margin:5%;
+      width:5%;
+      margin-top:6%;
+      float:right;
+    }
+    .welcome-label {
+        text-align: left;
+        font-size: 6.12vw;
+        margin-left: 8.13vw;
+        margin-bottom: 0vw;
+        margin-top: 3.44vh;
+        margin-right: 0vh;
+        opacity: 0.66;
+    }
+    .info-label {
+        margin-left: 8.13vw;
+        text-align: left;
+        font-size: 4.5vw;
+        margin-top: 0.59vh;
+        color: rgb(0,0,0);
+        opacity: 0.66;
+    }
+    .names-item {
+        margin-left: 8.13vw;
+        margin-right: 8.13vw;
+        .item-inner{
+            padding:0vmax !important;
+            border-bottom: 0.37vh solid rgb(176, 176, 176) !important;
+        }
+    }
+    .names-item .label{
+        opacity: 0.8 !important;
+    }
+    .button.activated{
+        background-color: rgb(38, 207, 198) !important;
+    }
+    .go-btn {
+        background-color: rgb(38, 207, 198);
+        box-shadow: 0rem 0.1rem 0.35rem 0.1rem rgba(0, 0, 0, 0.5);
+        width: 15.73vw;
+        height: 9.0vh;
+        border-radius: 0.45rem;
+        float: right;
+        margin-right: 9.33vw;
+        margin-top: 3.5vh;
+    }
+    .go-img {
+        height: 5.17vh;
+        margin-top: 1.72vh;
+        margin-bottom: 1.72vh;
+    }
+    .mobile-row{
+        border-radius: 1.4rem;
+        width: 83%;
+        margin-left: 8.0vw;
+        margin-top: 5.24vh;
+		box-shadow: 0rem 0.1rem 0.5rem 0rem rgba(0, 0, 0, 0.5);
+        .country-label{
+            background-color: rgba(38,207,198,0.3) !important;
+            border-top-left-radius: 1.4rem;
+            border-bottom-left-radius: 1.4rem;
+            align-items: center;
+            text-align: center;
+            .labl{
+                margin-left: 2.53vw;
+                margin-right:1.86vw;
+               /* margin-bottom: 23%;
+                margin-top: 23%;*/
+                font-size: 6.74vw;
+                margin-bottom: 1.34vh;
+                margin-top: 1.34vh;
+            }
+        }
+        .mobile-input{
+          align-items: center;
+            .text-input{
+                font-size: 6.74vw;
+                letter-spacing: 0.265rem;
+                margin-top: 1.34vh;
+                margin-left: 5.33vw;
+                margin-right: 8.0vw;
+                margin-bottom: 1.34vh;
+            }
+        }
+    }
+
+    .invalid{
+        margin-bottom: 1%;
+        box-shadow: 0 0px 5px rgba(250, 8, 8, 0.8);
+        width:99%;
+    }
+}

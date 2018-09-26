@@ -1,0 +1,38 @@
+{
+  "name": "Pobyt",
+  "app_id": "6db184da",
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/userRegistration",
+      "proxyUrl": "http://pobyt-webapp.azurewebsites.net/userRegistration"
+    },
+    {
+      "path": "/getHotelsbyLocation",
+      "proxyUrl": "http://pobyt-webapp.azurewebsites.net/getHotelsbyLocation"
+    },
+    {
+      "path": "/getHotelDetails",
+      "proxyUrl": "http://pobyt-webapp.azurewebsites.net/getHotelDetails"
+    },
+    {
+      "path": "/userLogout",
+      "proxyUrl": "http://pobyt-webapp.azurewebsites.net/userLogout"
+    },
+    {
+      "path": "/updateUserProfile",
+      "proxyUrl": "http://pobyt-webapp.azurewebsites.net/updateUserProfile"
+    },
+    {
+      "path": "/forgetPassword",
+      "proxyUrl": "http://pobyt-webapp.azurewebsites.net/forgetPassword"
+    },
+    {
+      "path": "https://pobyt.co/en/content.json",
+      "proxyUrl": "https://pobyt.co/en/content.json"
+    }
+  ],
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -1,0 +1,132 @@
+search {
+    .scroll-content{
+      /*padding-top:8%;*/
+    }
+    .searchout{
+      margin-right:20px;
+    }
+	.toolbar,.toolbar-background{
+    //background: rgb(59, 191, 184) !important;
+    background: rgb(255, 255, 255) !important;
+	}
+    ion-buttons button[icon-only].search-modal {
+        margin: 0 6px;
+        min-width: 36px;
+        color:rgb(71,195,189);
+    }
+    .searchbar{
+    	//border:0px !important;
+    	background:rgb(255,255,255) !important;
+     /* padding: 15px 10px 20px;*/
+      margin: 0 10px 9px;
+      border-bottom:2px solid rgb(15, 211, 202);
+    	box-shadow: none;//0 1pt 5pt 0 rgba(0,0,0,0.5);
+        min-height: 60px;
+        .searchbar-input{
+            //color:rgb(93,93,93);
+            color:rgb(59, 191, 184);
+            //border-bottom:2px solid rgb(59, 191, 184);
+          	font-weight:600 !important;
+            box-shadow:none !important;
+            font-size:3.5vmax !important;
+        }
+        .searchbar-input::placeholder{
+            //color:rgb(93,93,93);
+            color:rgb(0, 203, 193);
+            font-weight:600;
+            font-size:3.5vmax;
+
+        }
+        .searchbar-search-icon{
+            height:26px;
+            left:0px !important;
+            background-size: contain;
+            width:26px;
+            margin-top: -3px;
+        	  background-image:url(../assets/map/search_fa.png);
+        }
+        .searchbar-clear-icon{
+            width: 15px;
+            background-size: 15px;
+          	background-image:url(../assets/map/cross.png);
+        }
+    }
+
+    .defined-places-list{
+        background: rgba(255, 255, 255, 0.9) !important;
+        .recentText{
+            color:rgb(93,93,93);
+            padding: 10px 0 10px 10px;
+            font-size: 2.3vmax;
+            font-weight: 600;
+        }
+    }
+    .near-me{
+      margin-top:5%;
+      padding-bottom: 21px !important;
+    	border-bottom:2px solid rgb(144, 144, 144);
+    	.icon{
+        display:inline-block;
+        font-weight: 800;
+        color:rgb(144, 144, 144);
+    	}
+    	.place-name{
+        display:inline-block;
+        font-size:2.3vmax;
+        color:rgb(144, 144, 144);
+    	}
+    }
+    .defined-place{
+    	padding:15px 10px;
+        margin:0 10px;
+    	//border-bottom: 0.55px solid #c8c7cc;
+        ion-icon{
+          color:rgb(144, 144, 144);
+            margin-right:10px !important;
+        }
+        font-size: 2.3vmax;
+        color: #5d5d5d;
+    }
+    .defined-place:last-child{
+        border:0px;
+    }
+    .place-name{
+        display:inline-block;
+        font-size: 2.3vmax;
+        color:rgb(144, 144, 144);
+    }
+    .place-subtext{
+    	font-size: 2vmax;
+    }
+    ion-list{
+        margin-top: 10px !important;
+    }
+    .list{
+        margin:0px;
+    }
+    .header .toolbar:last-child .toolbar-background{
+    	border:0px !important;
+    }
+    .scroll-content{
+        //background: rgb(59, 191, 184) !important;
+        background: rgb(255, 255, 255) !important;
+    	ion-item{
+    		background: rgba(255, 255, 255, 0.9) !important;
+            padding:0 16px !important;
+    		font-size:2.5vmax;
+    		border:0px !important;
+            .item-inner{
+                ion-label{
+                    font-size: 2vmax;
+                    ion-icon{
+                        color: #61B1AE;
+                        margin-right:10px !important;
+                    }
+                }
+            }
+        }
+    	.item-inner{
+    		//border-bottom: 2px solid rgba(255,255,255,0.4) !important;
+    	}
+    }
+}

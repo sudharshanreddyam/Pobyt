@@ -1,0 +1,148 @@
+page-booking-history-details {
+	.scroll-content{
+	  padding-top:8%;
+	}
+	.content{
+    	background-color: #ffffff;
+	}
+	.bookings-title{
+    	font-size: 2.8vmax;
+	    font-weight: bold;
+	    padding: 15px 0 0px 15px;
+    }
+    .bookings-list{
+    	height:100%;
+    	div{
+	    	padding: 3% 2%;
+	    }
+    }
+
+    ion-header{
+        box-shadow:0px 3px 7px rgba(48,48,48,0.5);
+    }
+    .booking-history-container{
+        padding:3% 2%;
+        .bookedHotel-detail-container{
+            padding: 7% 2% 3% 2%;
+        }
+    }
+    .booking-parent{
+    	height:100%;
+    	position:relative;
+        border: 1.5px solid rgb(0, 203, 193);
+        padding:0px !important;
+        border-radius: 6px;
+        margin: 0 5% 5% 5%;
+        .bookedHotel-detail-container{
+            .booking-date{
+                font-size:4.5vw;
+                font-weight: 600;
+                text-overflow:ellipsis;
+                overflow:hidden;
+            }
+            .hotel-name{
+                font-size: 4.5vw;
+                padding-left: 5%;
+            }
+            .hotel-address{
+                font-size:2.8vw;
+                padding:0 0 0 5% !important;
+            }
+        }
+    	.viewDetails-container{
+            background-color:rgb( 0, 203, 193);
+            color: #fff;
+            font-size: 3.8vw;
+            padding: 2% 2% 2% 7%;
+        }
+    }
+
+    .booking-details-container{
+        height:65%;
+        width:100%;
+        .row{
+            padding: 3% 5%;
+        }
+    }
+
+    .tg  {border-collapse:collapse;border-spacing:0;width:100%;table-layout:fixed;margin-bottom: 6%;}
+    .tg td{font-size:2.5vmax;padding:3% 2%;overflow:hidden;padding-left: 6%;}
+    .tg .tg-lqy6{text-align:right;vertical-align:middle;font-size: 3.8vw;width:45%;}
+    .tg .tg-9hbo{font-size:3.8vw;font-weight:500;vertical-align:middle;text-align:left;color:rgb(71,195,189);white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width:55%;
+        span{
+            font-size:1vmax;
+            color:#000;
+            display:inline-block;
+            img{
+                width: 35%;
+                padding: 0 3%;
+                margin: 0 0 0 20%;
+            }
+        }
+    }
+    .tg .tg-9hbo:nth-of-type(1){
+        font-weight: 600;
+        text-decoration:underline;
+    }
+    .tg .tg-yw4l{text-align:right;vertical-align:middle;font-size: 2.1vmax;font-weight:600;width:45%;}
+
+    .c-buffer-enddetails{
+        height: 15%;
+        width:100%;
+        padding: 3.5% 0;
+        .c-call-hotel-button,.c-reporthotel-button{
+            color: #2fbbb4;
+            float: left;
+            padding: 2%;
+            width: 48%;
+            margin: 0 0%;
+            border-radius: 4px;
+            .callhotel-img, .c-reporthotel-img{
+                width: 14%;
+                padding: 0 2%;
+                float: left;
+                margin: 0 6%;
+            }
+            .callhotel-text,.c-reporthotel-text{
+                float: left;
+                width: 73%;
+                font-size: 2.2vmax;
+                font-weight:600;
+                color:rgb(47, 187, 180);
+            }
+        }
+    }
+
+    .status{
+        font-weight: 600;
+        font-size: 3vw;
+        padding-top: 2%;
+        text-align:center;
+    }
+    .LIVE, .Live, .Progress{
+        font-weight: 600;
+        font-size: 3vw;
+        padding-top: 2%;
+        text-align:center;
+        color:rgb(126, 211, 33);
+    }
+    .COMPLETED, .Completed{
+        font-weight: 600;
+        font-size: 3vw;
+        padding-top: 2%;
+        text-align:center;
+        color:rgb(154, 154, 154);   
+    }
+    .CANCELLED, .Cancelled, .Scheduled{
+        font-weight: 600;
+        font-size: 3vw;
+        padding-top: 2%;
+        text-align:center;
+        color:rgb(208, 2, 27);   
+    }
+	.pobyt-button{
+        margin: 0 25%;
+        width: 50%
+	}
+}
+

@@ -1,0 +1,78 @@
+history-card {
+
+	.bookings-title{
+    	font-size: 2.8vmax;
+	    font-weight: bold;
+	    padding: 15px 0 0px 15px;
+    }
+    .bookings-list{
+    	height:100%;
+    	div{
+	    	padding: 3% 2%;
+	    }
+    }
+    .booking-history-container{
+        padding:3% 2%;
+        .bookedHotel-detail-container{
+            padding: 7% 2% 3% 2%;
+        }
+    }
+    .booking-parent{
+    	height:100%;
+    	position:relative;
+        border: 1.5px solid rgb(0, 203, 193);
+        padding:0px !important;
+        border-radius: 6px;
+        .bookedHotel-detail-container{
+            .booking-date{
+                font-size:4.5vw;
+                font-weight: 600;
+                text-overflow:ellipsis;
+                overflow:hidden;
+            }
+            .hotel-name{
+                font-size: 4.5vw;
+                padding-left: 5%;
+            }
+            .hotel-address{
+                font-size:2.8vw;
+                padding:0 0 0 5% !important;
+            }
+        }
+    	.viewDetails-container{
+            background-color:rgb( 0, 203, 193);
+            color: #fff;
+            font-size: 3.8vw;
+            padding: 2% 2% 2% 7%;
+        }
+    }
+
+    .status{
+        font-weight: 600;
+        font-size: 3vw;
+        padding-top: 2%;
+        text-align:center;
+    }
+    .LIVE, .Live, .Progress{
+        font-weight: 600;
+        font-size: 3vw;
+        padding-top: 2%;
+        text-align:center;
+        color:rgb(126, 211, 33);
+    }
+    .COMPLETED, .Completed{
+        font-weight: 600;
+        font-size: 3vw;
+        padding-top: 2%;
+        text-align:center;
+        color:rgb(154, 154, 154);   
+    }
+    .CANCELLED, .Cancelled, .Scheduled{
+        font-weight: 600;
+        font-size: 3vw;
+        padding-top: 2%;
+        text-align:center;
+        color:rgb(208, 2, 27);   
+    }
+
+}

@@ -1,0 +1,107 @@
+otp {
+    .close-img {
+        height: 3.5vmax;
+        float: left;
+        margin-left: 4vmax;
+        margin-top: 3vmax;
+    }
+    .back-img {
+        height: 3.5vmax;
+        float: right;
+        margin-right: 4vmax;
+        margin-top: 3vmax;
+    }
+    .welcome-label {
+        text-align: left;
+        font-weight: 600;
+        font-size: 5vmax;
+        margin-left: 4vmax;
+    }
+    .info-label {
+        margin-left: 4vmax;
+        text-align: left;
+        font-size: 3.0vmax;
+        margin-bottom: 0vmax;
+        margin-top: 1vmax;
+    }
+    .mobile-row {
+        border-radius: 13px;
+        width: 85%;
+        margin-left: 4vmax;
+        margin-top: 4vmax;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+        .country-label {
+            width: 15%;
+            background-color: rgba(38, 207, 198, 0.3) !important;
+            border-top-left-radius: 13px;
+            border-bottom-left-radius: 13px;
+            .label {
+                font-size: 3.0vmax;
+            }
+        }
+        .mobile-label {
+            .label {
+                text-align: left;
+                padding-left: 2vmax;
+                font-size: 3vmax;
+            }
+        }
+    }
+    .otp {
+        ion-input{
+            margin-left: 10vmax;
+            margin-top: 1vmax;
+        }
+        $char-w: 2.9vmax;
+        $gap: 1.2*$char-w;
+        $n-char: 6;
+        $in-w: $n-char*($char-w + $gap);    
+        input {
+            display: block;
+            border: none;
+            padding: 0;
+            width: $in-w;
+            background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey $char-w, transparent 0, transparent $char-w + $gap) 0 100%/ #{$in-w - $gap} 2px no-repeat;
+            font-weight: 600;
+            margin-top: 1rem;
+            font-size: 5vmax;
+            opacity: .5;
+            letter-spacing: $gap;
+            &:focus {
+                outline: none;
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+    .label{
+        opacity: .5;
+    }
+    .otp-label {
+        margin-left: 4vmax;
+        font-size: 2.0vmax;
+    }
+    .resend-label {
+        text-align: left;
+        margin-left: 4vmax !important;
+        font-weight: 600;
+    }
+    .button.activated{
+        background-color: rgb(38, 207, 198) !important;
+    }
+    .button.activated{
+        background-color: rgb(38, 207, 198) !important;
+    }
+    .go-btn {
+        background-color: rgb(38, 207, 198);
+        box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.5);
+        width: 8vmax;
+        height: 8vmax;
+        border-radius: 3px;
+        float: right;
+        margin-right: 4vmax;
+        margin-top: 2vmax;
+    }
+    .go-img {
+        width: 3.0vmax;
+    }
+}

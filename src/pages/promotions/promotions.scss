@@ -1,0 +1,84 @@
+page-promotions {
+	.scroll-content{
+	  padding-top:8%;
+	}
+	.grid{
+		padding: 0 3%;
+	}
+	.PromotionsContent{
+		height: 100%;
+	}
+	.promotionsContainer{
+		height: 72%;
+	    overflow: scroll;
+	    position: relative;
+	}
+	.chooseText{
+		font-size: 4.2vw;
+	    font-weight: 600;
+	    text-decoration: underline;
+	    padding: 3% 5%;
+	    position: relative;
+	    height: 5%;
+	}
+
+	ion-header{
+		box-shadow:0px 3px 7px rgba(48,48,48,0.5);
+	}
+	.promoParent{
+		border-bottom: 3px solid rgb(36, 188, 180);
+		padding: 3% 0;
+	}
+
+	.promoTitle{
+		font-size: 5vw;
+	    font-weight: 600;
+	    color: rgb(0, 203, 193);
+	}
+
+	.promoDescription{
+		font-size: 3.5vw;
+	    font-weight: 600;
+	    color: rgb(85 ,85 ,85);
+	}
+	.promoApplyButton{
+		background: rgb(47, 187, 180);
+	    color: #fff;
+	    height: 40%;
+	    position: absolute;
+	    width: 80%;
+	    top: 30%;
+	    left: 10%;
+	    text-align: center;
+	    font-size: 3.2vw;
+	    border-radius: 5px;
+	    padding-top: 5%;
+	    max-height:50px;
+	}
+	.inviteFrndsContainer{
+	    position: fixed;
+	    height: 22%;
+	    width: 100%;
+	    bottom: 0;
+	    background: rgb(170, 227, 224);
+	}
+	.lookMore{
+	    height: 35%;
+	    text-align: center;
+	    padding: 8%;
+	    font-size: 4.8vw;
+	    font-weight: 600;
+	    color: rgb(74, 74, 74);
+	}
+	.inviteFrnds{
+		margin: 0 auto;
+	    width: 50%;
+	    height: 35%;
+	    background: rgb(47, 187, 180);
+	    color: #fff;
+	    border-radius: 5px;
+	    text-align: center;
+	    font-size: 5.5vw;
+	    padding-top: 3%;
+	}
+}

@@ -1,0 +1,108 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar hideBackButton padding>
+		<ion-title>PROFILE</ion-title>
+		<ion-buttons left>
+			<button ion-button icon-only (click)="this.navCtrl.pop()"><ion-icon name="ios-arrow-back"></ion-icon></button>
+		</ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+	<ion-list no-margin no-padding class="profile-card">
+		<ion-row no-margin no-padding (click)="updateFirstName()">
+			<ion-col no-margin no-padding>
+				<ion-item no-margin no-padding no-lines>
+					<ion-label stacked class="stacked-lbl">First Name</ion-label>
+					<ion-label class="profile-lbl" [style.visibility]="userInfo.firstName?.length>0 ? 'visible' : 'hidden'">
+						<span *ngIf ="userInfo.firstName?.length>0">{{userInfo.firstName}}</span>
+						<span *ngIf ="userInfo.firstName?.length<=0">.</span>
+					</ion-label>
+				</ion-item>
+			</ion-col>
+			<ion-col col-1 no-margin no-padding>
+				<ion-icon ios="ios-arrow-forward" class="profile-arrow"></ion-icon>
+			</ion-col>
+		</ion-row>
+		<div class="info-divider"></div>
+		<ion-row no-margin no-padding (click)="updateLastName()">
+			<ion-col no-margin no-padding>
+				<ion-item no-margin no-padding no-lines>
+					<ion-label stacked class="stacked-lbl">Last Name</ion-label>
+					<ion-label class="profile-lbl" [style.visibility]="userInfo.lastName?.length>0 ? 'visible' : 'hidden'">
+						<span *ngIf ="userInfo.lastName?.length>0">{{userInfo.lastName}}</span>
+						<span *ngIf ="userInfo.lastName?.length<=0">.</span>
+					</ion-label>
+				</ion-item>
+			</ion-col>
+			<ion-col col-1 no-margin no-padding>
+				<ion-icon ios="ios-arrow-forward" class="profile-arrow"></ion-icon>
+			</ion-col>
+		</ion-row>
+		<div class="info-divider"></div>
+		<ion-row no-margin no-padding>
+			<ion-col no-margin no-padding>
+				<ion-item no-margin no-padding no-lines>
+					<ion-label stacked class="stacked-lbl">E-mail</ion-label>
+					<ion-label class="profile-lbl" [style.visibility]="userInfo.emailID?.length>0 ? 'visible' : 'hidden'">
+						<span *ngIf ="userInfo.emailID?.length>0">{{userInfo.emailID}}</span>
+						<span *ngIf ="userInfo.emailID?.length<=0">.</span>
+					</ion-label>
+				</ion-item>
+			</ion-col>
+			<!-- <ion-col col-1 no-margin no-padding>
+				<ion-icon ios="ios-arrow-forward" class="profile-arrow"></ion-icon>
+			</ion-col> -->
+		</ion-row>
+		<div class="info-divider"></div>
+		<ion-row *ngIf="userInfo.loginType == 'APP'" no-margin no-padding (click)="updatePassword()">
+			<ion-col no-margin no-padding>
+				<ion-item no-margin no-padding no-lines>
+					<ion-label stacked class="stacked-lbl">Password</ion-label>
+					<ion-label class="profile-lbl">*****</ion-label>
+				</ion-item>
+			</ion-col>
+			<ion-col col-1 no-margin no-padding>
+				<ion-icon ios="ios-arrow-forward" class="profile-arrow"></ion-icon>
+			</ion-col>
+		</ion-row>
+		<div class="info-divider"></div>
+		<ion-row no-margin no-padding (click)="updateMobile()">
+			<ion-col no-margin no-padding>
+				<ion-item no-margin no-padding no-lines>
+					<ion-label stacked class="stacked-lbl">Mobile</ion-label>
+					<ion-label class="profile-lbl" [style.visibility]="userInfo.contactNumber?.length>0 ? 'visible' : 'hidden'">
+						<span *ngIf ="userInfo.contactNumber?.length>0">{{userInfo.contactNumber}}</span>
+						<span *ngIf ="userInfo.contactNumber?.length<=0">.</span>
+					</ion-label>
+				</ion-item>
+			</ion-col>
+			<ion-col col-1 no-margin no-padding>
+				<ion-icon ios="ios-arrow-forward" class="profile-arrow"></ion-icon>
+			</ion-col>
+		</ion-row>
+		<div class="info-divider"></div>
+		<ion-row no-margin no-padding (click)="updateDOB()">
+			<ion-col no-margin no-padding>
+				<ion-item no-margin no-padding no-lines>
+					<ion-label stacked class="stacked-lbl">Date of Birth</ion-label>
+					<ion-label class="profile-lbl" [style.visibility]="userInfo.dateOfBirth?.length>0 ? 'visible' : 'hidden'">
+						<span *ngIf ="userInfo.dateOfBirth?.length>0">{{userInfo.dateOfBirth}}</span>
+						<span *ngIf ="userInfo.dateOfBirth?.length<=0">.</span>
+					</ion-label>
+				</ion-item>
+			</ion-col>
+			<ion-col col-1 no-margin no-padding>
+				<ion-icon ios="ios-arrow-forward" class="profile-arrow"></ion-icon>
+			</ion-col>
+		</ion-row>
+	</ion-list>
+	<ion-row no-margin no-padding>
+		<button ion-button class="signout-btn" (click)="logOut()">Sign out</button>
+	</ion-row>
+</ion-content>

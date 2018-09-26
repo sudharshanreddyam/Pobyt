@@ -1,0 +1,288 @@
+page-booking-confirm {
+    color:#fff;
+    .confirm-customerdetail-container{
+        color:#fff;
+        background-color:rgb(47,187,180);
+        height:50%;
+        box-shadow:0 4px 7px rgba(48, 48, 48, 0.5);
+        border-radius: 0 0 3px 3px;
+        padding: 0 5%;
+        .confirm-header-container{
+            height: 17%;
+            padding-top: 5%;
+            .confirm-header{
+                float:left;
+                width:82%;
+                .confirm-header-img{
+                    float:left;
+                    width:17%;
+                    img{
+                        width: 70%;
+                    }
+                }
+                .confirm-header-text{
+                    float:left;
+                    width:80%;
+                    font-size: 3vmax;
+                    font-weight: 600;
+                }
+            }
+            .confirm-close{
+                float:left;
+                width:16%;
+                height:100%;
+                text-align:left;
+            }
+            
+        }
+        .confirm-text{
+            height: 15%;
+            padding: 2% 0;
+            font-size: 2vmax;
+            line-height: 1.2;
+        }
+        .customer-details-card{
+            background: #fff;
+            color: rgb(11, 10, 10);
+            padding: 1% 6%;
+            border-radius: 5px;
+            .c-hotel-name{
+                font-size: 3.5vmax;
+                font-weight: 600;
+            }
+            .c-hotel-address{
+                font-size: 1.8vmax;
+                font-weight: 600;
+            }
+            .c-booking-details{
+                padding-top: 2%;
+                font-size: 2vmax;
+            }
+        }
+        .c-requirements-container{
+            height: 14%;
+            width:100%;
+            padding: 3.5% 0;
+            .c-max2-container{
+                background: #fff;
+                color: #000;
+                float: left;
+                padding: 2%;
+                width: 35%;
+                margin: 0 7%;
+                border-radius: 4px;
+                .c-max2-img{
+                    width: 20%;
+                    padding: 2%;
+                    float: left;
+                    margin-right: 5%;
+                }
+                .c-max2-text{
+                    float: left;
+                    width: 73%;
+                    font-size: 1.6vmax;
+                    padding:0 2%;
+                }
+
+            }
+            .c-govtid-container{
+                background: #fff;
+                color: #000;
+                float: left;
+                padding: 2%;
+                width: 35%;
+                margin: 0 7%;
+                border-radius: 4px;
+                .c-govtid-img{
+                    width: 20%;
+                    padding: 2%;
+                    float: left;
+                    margin-right: 5%;
+                }
+                .c-govtid-text{
+                    float: left;
+                    width: 73%;
+                    font-size: 1.6vmax;
+                    padding:0 2%;
+                }
+            }
+        }
+    }
+    .c-bufferdetails-container{
+        padding: 5% 3%;
+        height:50%;
+        .c-bufferInfo{
+            font-size: 1.8vmax;
+            font-weight: 600;
+            height: 15%;
+        }
+        .c-bufferTimer-container{
+            height: 55%;
+            .bufferTimer-svg{
+                width: 100%;
+                height: 125px;
+                /*float:left;
+                width:40%;
+                height: 100%;*/
+            }
+            .bufferTimer-txt1,.bufferTimer-txt2{
+                float: left;
+                /*width: 30%;*/
+                font-weight: 600;
+                color: #181818;
+                font-size: 3vw;
+                padding: 20% 2%;
+            }
+            .bufferTimer-txt2{
+                padding: 23% 2%;
+            }
+        }
+        .c-cancel-booking{
+            font-size: 1.8vmax;
+            text-decoration: underline;
+            text-align: center;
+            height: 16%;
+            position: relative;
+        }
+        .c-buffer-enddetails{
+            height: 15%;
+            width:100%;
+            padding: 3.5% 0;
+            .c-call-hotel-button{
+                background: rgb(47, 187, 180);
+                box-shadow:0 0px 9px rgba(101, 101, 101, 0.5);
+                color: #fff;
+                float: left;
+                padding: 2%;
+                width: 100%;
+                /*width: 35%;*/
+                margin: 0 7%;
+                border-radius: 4px;
+                .callhotel-img{
+                    width: 14%;
+                    padding: 0 2%;
+                    float: left;
+                    margin: 0 6%;
+                }
+                .callhotel-text{
+                    float: left;
+                    width: 73%;
+                    font-size: 4.1vw;
+                    font-weight:600;
+                }
+            }
+            .c-directions-button{
+                background: rgb(47, 187, 180);
+                box-shadow:0 0px 9px rgba(101, 101, 101, 0.5);
+                color: #fff;
+                float: left;
+                padding: 2%;
+                width: 100%;
+                /*width: 35%;*/
+                margin: 0 7%;
+                border-radius: 4px;
+                .c-directions-img{
+                    width: 16%;
+                    padding: 0 2%;
+                    float: left;
+                    margin: 0 5%;
+                }
+                .c-directions-text{
+                    float: left;
+                    width: 73%;
+                    /*font-size: 2.2vmax;*/
+                    font-size:4.1vw;
+                    font-weight:600;
+                }
+            }
+        }
+    }
+    .confirm-mobile {
+        width: 70%;
+        margin-top: 25%;
+    }
+
+    .confirm-location{
+        width: 100%;
+        margin-top: 25%;
+    }
+
+    .pobyt-close{
+        margin: 5%;
+        width: 35%;
+    }
+
+    .tg  {border-collapse:collapse;border-spacing:0; margin:0 auto;}
+    .tg td{font-family:Arial, sans-serif;padding:5px 5px;overflow:hidden;word-break:normal;}
+    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;overflow:hidden;word-break:normal;}
+    .tg .tg-lqy6{text-align:right;vertical-align:top}
+    .tg .tg-9hbo{font-weight:600;vertical-align:top}
+
+    a.nostyle {
+        text-decoration: inherit;
+        color: inherit;
+        cursor: auto;
+    }
+
+    a.nostyle:visited {
+        text-decoration: inherit;
+        color: inherit;
+        cursor: auto;
+    }
+
+
+    .item {
+        position: relative;
+        height: 122px;
+        width: 120px;
+        /*width: 100%;
+        height: 100%;*/
+        .timer-details-container{
+            text-align:center;
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            left: 22%;
+            top: 40%;
+        }
+        .timer-hours-c,.timer-colon,.timer-mins-c{
+            float:left;
+            width:25%;
+            text-align:center;
+        }
+        .timer-hour,.timer-mins{
+            border:2px solid #24D5CB;
+            border-radius: 3px;
+            font-size:2.3vmax;
+            color: #181818;
+            font-weight: 600;
+            padding: 3%;
+        }
+        .timer-colon{
+            width: 6%;
+            font-size: 3vmax;
+        }
+        .timer-hourtext,.timer-minstext{
+            font-size:3vw;
+            font-weight:bold;
+            color: #181818;
+        }
+    }
+
+    svg {
+       -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 5%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    #circle_animation {
+      stroke-dasharray: 440; /* this value is the pixel circumference of the circle */
+      stroke-dashoffset: 440;
+      transition: all 1s linear;
+    }
+
+}

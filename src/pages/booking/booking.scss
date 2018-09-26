@@ -1,0 +1,429 @@
+page-booking {
+    
+    .scroll-content {
+      padding-bottom:0!important;
+    }
+    .c-imp-container{
+        margin: 0% 3% 5% 3%;
+    }
+    .col,.grid{
+        padding:0;
+    }
+    .booking-details-container{
+        height:65%;
+        width:100%;
+        .row{
+            padding: 3% 5%;
+        }
+    }
+    .booking-promo-container{
+        height:45%;
+        width:100%;
+    }
+    .booking-hotelinfo {
+        font-family: 'Open sans';
+        font-size: 4vmax;
+        font-weight: 600;
+    }
+    .booking-address {
+        font-family: 'Open sans';
+        font-size: 2vmax;
+    }
+    .buffer-info {
+        font-size: 2.8vw;
+        font-weight: 600;
+        text-align: center;
+        margin: 3% auto;
+        padding: 0.5% 0;
+        width: 100%;
+    }
+    .booking-lable {
+        text-align: right;
+    }
+    .booking-imp {
+        font-family: 'Open sans';
+        font-size: 9pt;
+        font-weight: bold;
+    }
+    .booking-lable,
+    .booking-lable-content {
+        font-family: 'Open sans';
+        font-size: 11pt;
+    }
+    .booking-lable-content {
+        font-weight: bold;
+        text-transform: capitalize;
+        color: rgb(47, 187, 180);
+        font-size: 14pt;
+        padding-top: 3px;
+    }
+    .booking-lable-content-light {
+        text-transform: capitalize;
+        color: rgb(47, 187, 180);
+        font-size: 14pt;
+        padding-top: 3px;
+    }
+    .booking-timeInfo {
+        font-family: 'Open sans';
+        color: #0FACA5;
+        font-size: 2.6vmax;
+        font-weight: bold;
+    }
+    .bookingContent {
+        background-color: #FFF;
+        .hotel-name{
+            padding: 5% 0 0 5%;
+        }
+    }
+    .idcard {
+        margin: 0px;
+        font-size: 2.0vmax;
+        color: #92223A;
+        font-weight: bold;
+        ion-label {
+            white-space: unset;
+        }
+    }
+
+    .termsHeading {
+        color: #0FACA5;
+        font-family: 'Open sans';
+        font-size: 2.6vmax;
+        font-weight: bold;
+        margin-top: 2%
+    }
+    .max2 {
+        margin-left: 1rem;
+    }
+    .impBtn {
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        font-family: 'Open sans';
+        background-color: rgba(186, 232, 229, .3);
+        margin-right: 1rem;
+        border-radius: 27pt;
+        color: rgb(92, 92, 92);
+    }
+    .impLabel {
+        font-weight: 600;
+        font-size:1.8vmax;
+        margin-top:2%;
+    }
+    .leftPadding {
+        padding-left: 4%;
+    }
+    .sub-headings {
+        color: grey;
+        font-weight: bold
+    }
+    .guestText {
+        margin-left: 4%
+    }
+    .b-username-container,.b-user-details-container{
+        margin: 3% 5%;
+        border-radius: 4px;
+        box-shadow:0px 0px 5px rgba(131,131,131,0.5);
+    }
+
+
+    .tg  {border-collapse:collapse;border-spacing:0;width:100%;table-layout:fixed;margin-bottom: 6%;}
+    .tg td{font-size:2.5vmax;padding:3% 2%;overflow:hidden;padding-left: 6%;}
+    .tg .tg-lqy6{text-align:right;vertical-align:middle;font-size: 3.8vw;width:45%;}
+    .tg .tg-9hbo{font-size:5.3vw;font-weight:500;vertical-align:middle;text-align:left;color:rgb(71,195,189);white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width:55%;
+        span{
+            font-size:1vmax;
+            color:#000;
+            display:inline-block;
+            img{
+                width: 35%;
+                padding: 0 3%;
+                margin: 0 0 0 20%;
+            }
+        }
+    }
+    .tg .tg-9hbo:nth-of-type(1){
+        font-weight: 600;
+        text-decoration:underline;
+    }
+    .tg .tg-yw4l{text-align:right;vertical-align:middle;font-size: 2.1vmax;font-weight:600;width:45%;}
+
+    .c-requirements-container{
+            height: 18%;
+            width:100%;
+            padding: 2% 0 0 0;
+            .c-max2-container{
+                background: rgb(186, 232, 229);
+                color: rgb(92, 92, 92);
+                float: left;
+                padding: 2%;
+                width: 40%;
+                height:100%;
+                margin: 0 5%;
+                border-radius: 4px;
+                .c-max2-img{
+                    width: 20%;
+                    padding: 0 2%;
+                    float: left;
+                    margin-right: 5%;
+                }
+                .c-max2-text{
+                    float: left;
+                    width: 73%;
+                    font-size: 3.2vw;
+                    padding: 2%;
+                }
+
+            }
+            .c-govtid-container{
+                background: rgb(186, 232, 229);
+                color: rgb(92, 92, 92);
+                float: left;
+                padding: 2%;
+                width: 40%;
+                margin: 0 5%;
+                border-radius: 4px;
+                .c-govtid-img{
+                    width: 20%;
+                    padding: 0 2%;
+                    float: left;
+                    margin-right: 5%;
+                }
+                .c-govtid-text{
+                    float: left;
+                    width: 73%;
+                    font-size: 3.2vw;
+                    padding: 2%;
+                }
+            }
+        }
+
+        .item-cover{
+            width:0% !important;
+            height:0% !important;
+        }
+        .datetime{
+            color:rgb(79, 79, 79);
+            padding:0 !important;
+            text-align:left;
+            margin: 4% 0;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+            border-radius: 3px;
+            .datetime-text{
+                margin: 8px;
+            }
+            .datetime-placeholder{
+                margin: 8px;
+            }
+        }
+        .text-input{
+            color:rgb(79, 79, 79);
+            margin:0px !important;
+            padding:8px !important;
+        }
+        .bo-container{
+            .bo-infoText{
+                margin:5%;
+                font-weight:600;
+                font-size:2vmax;
+                color:rgb(69,69,69);
+            }
+            .bo-form-container{
+                width:90%;
+                margin:0 auto;
+                box-shadow:0 0 5px rgba(172, 172, 172, 0.5);
+                .submitDetails{
+                    width: auto;
+                    padding: 5%;
+                    margin: 4% auto;
+                    text-align: center;
+                    .submit-btn{
+                        padding: 5%;
+                        font-size: 2.5vmax;
+                        background-color:rgb(71, 195, 189);
+                        color:#fff;
+                    }
+                }
+            }
+
+            .tg  {border-collapse:collapse;border-spacing:0;width:100%;table-layout:fixed;}
+            .tg td{font-size:2vmax;padding:2% 5%;overflow:hidden;padding-left: 5%;color:rgb(79, 79, 79);}
+            .tg .tg-lqy6{text-align:right;padding:2%;vertical-align:middle;font-size: 2.1vmax;font-weight:normal;width:35%;}
+            .tg .tg-yw4l{text-align:right;vertical-align:middle;font-size: 2.1vmax;font-weight:600;width:55%;
+                .invalid{
+                    box-shadow: 0 1px 5px rgba(250, 8, 8, 0.8);
+                }
+            }
+            .tg .tg-9hbo{font-size:2.8vmax;font-weight:500;vertical-align:middle;text-align:left;color:rgb(71,195,189);
+                span{
+                    font-size:1vmax;
+                    color:#000;
+                    img{
+                        width: 17%;
+                        padding: 0 3%;
+                        margin: 0 0 0 2%;
+                    }
+                }
+            }
+        }
+        ion-input{
+            //margin: 4% 2%;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+            border-radius: 3px;
+            .invalid{
+                box-shadow: 0 1px 5px rgba(250, 8, 8, 0.8);
+            }
+            input{
+                transform:translate3d(0,0,0) !important;
+                opacity:1 !important;
+            }
+        }
+        ion-header{
+            box-shadow:0px 3px 7px rgba(48,48,48,0.5);
+        }
+
+        //promo container styles
+
+
+        .booking-promo-container{
+            //background-color:rgb(170, 227, 224);
+            height: 35%;
+            position: relative;
+            .b-promos-link-parent{
+                .b-promos-link{
+                    text-decoration: underline;
+                    color: rgb(170, 227, 224);
+                    font-size: 4.3vw;
+                    margin: 3% 5%;
+                }
+            }
+            .b-promo-parent{
+                background-color: #fff;
+                margin: 5%;
+                position: absolute;
+                height: 50%;
+                border-radius: 5px;
+                width: 90%;
+                .promo-field-container{
+                    width: 90%;
+                    height: 35%;
+                    position: relative;
+                    margin: 0 auto;
+                }
+                .promo-text{
+                    font-size: 4.5vw;
+                    padding: 3% 5% 0 5%;
+                }
+                .promo-field{
+                    float: left;
+                    width: 70%;
+                    height: 100%;
+                    ion-input{
+                        border: 0.5px solid rgb(195 ,195 ,195);
+                        box-shadow:none !important;
+                        height: 84%;
+                        margin: 3% 0;
+                    }
+                    .text-input{
+                        height: 12px;
+                    }
+                }
+                .promo-button{
+                    float: left;
+                    width: 30%;
+                    height: 100%;
+                    font-size: 3.2vw;
+                    .pobyt-button{
+                        width: 80%;
+                        height: 83%;
+                        margin: 8%;
+                        border-radius: 4px;
+                        color: #fff;
+                        font-size: 4.2vw;
+                    }
+                }
+            }
+            .b-promo-end-text{
+                height: 15%;
+                top: 60%;
+                position: absolute;
+                font-size: 3.2vw;
+                width: 100%;
+                padding: 0 5%;
+            }
+
+            .promo-statusinfo-container{
+                float: left;
+                width: 100%;
+                padding: 2% 5%;
+                .promo-status-img{
+                    float:left;
+                    width:9%;
+                    img{
+                        width: 70%;
+                    }
+                }
+                .promo-status-text{
+                    float:left;
+                    width:80%;
+                    font-size: 4vw;
+                }
+            }
+        }
+     .username{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width:70%;
+            color: #47c3bd !important;
+            font-size: 5.3vw !important;
+            text-transform:capitalize;
+        }
+        li.hotel-points{
+            color: #080808;
+            font-size: 12px;
+            padding-right: 2%;
+        }
+        .check-container{
+            padding: 0 3% 0 5%;
+        }
+        .AcceptTerms{
+            display: inline-block;
+            width: 90%;
+        }
+        .termLink{
+            text-decoration: underline;
+            color: blue;
+        }
+        .checkbox{
+            margin-bottom: 17px;
+            margin-right: 5px;
+        }
+        .checkbox-checked{
+            border-color: #2EBBB4 !important;
+            background-color: #2EBBB4 !important;
+        }
+        .PayButton-Container{
+            text-align: center;
+            padding: 5% 0 0 0;
+            .payAtHotel{
+                border: 2px solid #2EBBB4 !important;
+                color: #2EBBB4 !important;
+                background:transparent;
+            }
+        }
+        .pobyt-button{
+            width: 70%; 
+        }
+
+        .city-select {
+            width: 100%;
+            max-width: 100%;
+            min-height: 5vh;
+            text-align: left;
+            font-weight: 600;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 3px;
+            color: black !important;
+            padding: 10px;
+        }
+    }
