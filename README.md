@@ -1,7 +1,7 @@
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/sudharshanreddyam/Pobyt/blob/master/preview.gif)
 
 ## How to use this template
 
